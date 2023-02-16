@@ -31,6 +31,8 @@ library(reticulate)
 library(gtsummary)
 library(stargazer)
 library(randomForest)
+library(ROCR)
+library(pROC)
 ```
 
 ```{r df, warning=FALSE, message=FALSE}
@@ -130,33 +132,47 @@ confusion_mtx
 
 ```{r logmodel}
 library(caret)
+set.seed(2377)
 train.index <- createDataPartition(df$scam_networks_grouped, 
                                    p = .8, list = FALSE)
 train <- df[ train.index,]
 test  <- df[-train.index,]
 
+train$scam_type_grouped = ifelse(train$scam_type_grouped  == "Exploit", 1, 0)
 test$scam_type_grouped = ifelse(test$scam_type_grouped  == "Exploit", 1, 0)
 logistic_model <- glm(scam_type_grouped ~ ., data = train, family = "binomial")
 summary(logistic_model)
-prob_pred <- predict(logistic_model, type = 'response', newdata = test)
+train_prob_pred <- predict(logistic_model, type = 'response', newdata = train)
+test_prob_pred <- predict(logistic_model, type = 'response', newdata = test)
 #y_pred = ifelse(prob_pred > 0.5, "Exploit", "Exit Scam")
-y_pred = ifelse(prob_pred > 0.5, 1, 0)
+
+# Train Confusion Matrix
+y_train_pred = ifelse(train_prob_pred > 0.5, 1, 0)
+y_train_pred<- as.factor(y_train_pred)
+train$scam_type_grouped <- as.factor(train$scam_type_grouped)
+(cm = table(train$scam_type_grouped, y_train_pred))
+
+# Test Confusion Matrix
+y_test_pred = ifelse(test_prob_pred > 0.5, 1, 0)
+y_test_pred<- as.factor(y_test_pred)
 test$scam_type_grouped <- as.factor(test$scam_type_grouped)
-(cm = table(test$scam_type_grouped, y_pred)) # NAs ignored
+(cm = table(test$scam_type_grouped, y_test_pred)) # NAs ignored
 #y_pred <- as.factor(unname(y_pred)) # for cfm plot
-y_pred<- as.factor(y_pred)
 ```
 
-```{r cfm}
+```{r cfmtrain}
+# 1. Open jpeg file
+#jpeg("Train_CFM.jpg", width = 350, height = 350)
+
 library(scales)
 ggplotConfusionMatrix <- function(m){
-  mytitle <- paste("Test Accuracy", percent_format()(m$overall[1]))
+  mytitle <- paste("Train Accuracy", percent_format()(m$overall[1]))
   p <-
     ggplot(data = as.data.frame(m$table) ,
            aes(x = Prediction, y = Reference)) +
     geom_tile(aes(fill = log(Freq)), 
               colour = "white", show.legend = FALSE) +
-    scale_fill_gradient(low = "#56B1F7", high = "#132B82") +
+    scale_fill_gradient(low = "white", high = "#56B1F7") +
     geom_text(aes(x = Prediction, y = Reference, 
                   label = Freq)) +
     ggtitle(mytitle) + 
@@ -166,28 +182,73 @@ ggplotConfusionMatrix <- function(m){
           panel.grid.minor = element_blank())
   return(p)
 }
-cfm_train <- confusionMatrix(test$scam_type_grouped, y_pred)
+cfm_train <- confusionMatrix(train$scam_type_grouped, y_train_pred)
 ggplotConfusionMatrix(cfm_train)
+
+# Close the jpeg file
+#dev.off() 
 ```
 
 
-```{r roc, message=FALSE, warning=FALSE}
-# ROC-AUC Curve
-ROCPred <- prediction(y_pred, test$scam_type_grouped) 
-ROCPer <- performance(ROCPred, measure = "tpr", 
-                      x.measure = "fpr")
+```{r cfmtest}
+# Open jpeg file
+#jpeg("Test_CFM.jpg", width = 350, height = 350)
 
-auc <- performance(ROCPred, measure = "auc")
-auc <- auc@y.values[[1]]
-auc
+library(scales)
+ggplotConfusionMatrix <- function(m){
+  mytitle <- paste("Test Accuracy", percent_format()(m$overall[1]))
+  p <-
+    ggplot(data = as.data.frame(m$table) ,
+           aes(x = Prediction, y = Reference)) +
+    geom_tile(aes(fill = log(Freq)), 
+              colour = "white", show.legend = FALSE) +
+    scale_fill_gradient(low = "white", high = "#56B1F7") +
+    geom_text(aes(x = Prediction, y = Reference, 
+                  label = Freq)) +
+    ggtitle(mytitle) + 
+    scale_x_discrete(limits = rev) +
+    theme_minimal() + 
+    theme(panel.grid.major = element_blank(), 
+          panel.grid.minor = element_blank())
+  return(p)
+}
+cfm_test <- confusionMatrix(test$scam_type_grouped, y_test_pred)
+ggplotConfusionMatrix(cfm_test)
 
-# Plotting curve
-plot(ROCPer)
-plot(ROCPer, colorize = TRUE, 
-     print.cutoffs.at = seq(0.1, by = 0.1), 
-     main = "ROC CURVE")
-abline(a = 0, b = 1)
+# Close the jpeg file
+#dev.off() 
+```
 
-auc <- round(auc, 4)
-legend(.6, .4, auc, title = "AUC", cex = 1)
+```{r roctraintest, message=FALSE, warning=FALSE}
+# Train and Test Data ROC-AUC Curve
+train_pred <- prediction(train_prob_pred, train$scam_type_grouped)
+test_pred <- prediction(test_prob_pred, test$scam_type_grouped)
+
+# Create an ROC curve
+perf_train <- performance(train_pred, measure = "tpr", x.measure = "fpr")
+perf_test <- performance(test_pred, measure = "tpr", x.measure = "fpr")
+
+# Open a pdf and jpeg file
+#pdf("ROC.pdf", width = 6.5, height = 4.24) 
+#jpeg("ROC.jpg", width = 700, height = 350)
+
+
+# Plot the ROC curve
+plot(perf_train, main = "Logistic Regression AUC-ROC Curve",
+    col = "#009ECE")
+plot(perf_test, add = T, col = "#FF9E00", lwd = 1.5)
+legend(0.32, 0.25, c("Train Data", "Test Data"), 
+       col = c("#009ECE", "#FF9E00"), 
+       bty = "n", lwd = 1.2, cex = 0.75)
+abline(0, 1, lty = 2, col = "gray") # Add y=x line
+
+# Close the pdf/jpeg file
+#dev.off() 
+```
+
+```{r auctraintest, message=FALSE, warning=FALSE}
+auc.train <- auc(train$scam_type_grouped, train_prob_pred)
+cat("Area under the curve for Logistic Regression Train Set is: ", auc.train)
+auc.test <- auc(train$scam_type_grouped, train_prob_pred)
+cat("\nArea under the curve for Logistic Regressio  Test Set is: ", auc.test)
 ```
