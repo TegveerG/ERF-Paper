@@ -1,0 +1,817 @@
+Chain,Month,DOW,Scam_Type,Funds_Lost,Funds_Returned
+Ethereum,August,Sunday,Exploit,FL Low Millions,No Funds Returned
+Avax,May,Tuesday,Exit Scam,FL Less Than 100K,No Funds Returned
+CEX,April,Saturday,Exploit,FL Low Millions,No Funds Returned
+Binance,July,Wednesday,Exit Scam,FL High 100K's,No Funds Returned
+Fantom,May,Saturday,Exploit,FL Less Than 100K,No Funds Returned
+Ethereum,October,Tuesday,Exit Scam,FL Less Than 100K,No Funds Returned
+CEX,February,Wednesday,Exploit,FL Low Millions,No Funds Returned
+CEX,July,Friday,Exploit,FL Low Millions,No Funds Returned
+Avax,September,Tuesday,Exploit,FL Low 100K's,No Funds Returned
+Ethereum,October,Wednesday,Exit Scam,FL Less Than 100K,No Funds Returned
+Binance,May,Monday,Exploit,FL High 100K's,No Funds Returned
+CEX,October,Monday,Exploit,FL Low Millions,No Funds Returned
+Other,October,Saturday,Exploit,FL Less Than 100K,No Funds Returned
+Ethereum,July,Sunday,Exploit,FL High 100K's,No Funds Returned
+Binance,February,Monday,Exit Scam,FL Low 100K's,No Funds Returned
+Ethereum,June,Thursday,Exploit,FL Less Than 100K,No Funds Returned
+Ethereum,December,Thursday,Exploit,FL Low 100K's,No Funds Returned
+Ethereum,December,Tuesday,Exit Scam,FL Less Than 100K,No Funds Returned
+Other,July,Thursday,Exit Scam,FL Low Millions,No Funds Returned
+Binance,August,Tuesday,Exit Scam,FL Low 100K's,No Funds Returned
+Ethereum,July,Sunday,Exploit,FL Low 100K's,FR Low 100K's
+Binance,July,Wednesday,Exit Scam,FL Less Than 100K,No Funds Returned
+Binance,September,Thursday,Exit Scam,FL Less Than 100K,No Funds Returned
+Binance,June,Thursday,Exit Scam,FL Low 100K's,No Funds Returned
+Ethereum,June,Saturday,Exploit,FL Low 100K's,No Funds Returned
+Ethereum,July,Sunday,Exploit,FL Low 100K's,No Funds Returned
+Other,April,Wednesday,Exploit,FL Less Than 100K,No Funds Returned
+Heco,December,Thursday,Exploit,FL Low 100K's,No Funds Returned
+Fantom,March,Tuesday,Exploit,FL Low Millions,No Funds Returned
+Binance,January,Friday,Exit Scam,FL Low 100K's,No Funds Returned
+Fantom,January,Sunday,Exit Scam,FL High 100K's,No Funds Returned
+Binance,January,Thursday,Exploit,FL Low Millions,No Funds Returned
+Ethereum,October,Friday,Exit Scam,FL Less Than 100K,No Funds Returned
+CEX,December,Monday,Exit Scam,FL Billions,No Funds Returned
+CEX,March,Tuesday,Exploit,FL Less Than 100K,FR Less Than 100K (>0)
+Ethereum,June,Friday,Exit Scam,FL Less Than 100K,No Funds Returned
+CEX,May,Wednesday,Exploit,FL Low 100K's,No Funds Returned
+Binance,February,Wednesday,Exit Scam,FL High 100K's,No Funds Returned
+Ethereum,June,Sunday,Exploit,FL Low Millions,FR Low Millions
+Ethereum,February,Saturday,Exploit,FL Low Millions,FR Low Millions
+Polygon,July,Monday,Exploit,FL Less Than 100K,No Funds Returned
+Avax,May,Saturday,Exit Scam,FL Low Millions,No Funds Returned
+CEX,October,Sunday,Exploit,FL Low Millions,No Funds Returned
+Ethereum,September,Saturday,Exploit,FL Low 100K's,No Funds Returned
+Ethereum,October,Tuesday,Exploit,FL Low Millions,No Funds Returned
+Ethereum,July,Wednesday,Exploit,FL Low 100K's,No Funds Returned
+Ethereum,February,Sunday,Exploit,FL Low Millions,No Funds Returned
+Binance,July,Wednesday,Exit Scam,FL Less Than 100K,No Funds Returned
+Ethereum,December,Saturday,Exit Scam,FL Less Than 100K,No Funds Returned
+CEX,July,Tuesday,Exploit,FL Low Millions,No Funds Returned
+Binance,September,Tuesday,Exit Scam,FL Less Than 100K,No Funds Returned
+CEX,October,Wednesday,Exploit,FL Less Than 100K,No Funds Returned
+Binance,March,Sunday,Exit Scam,FL Less Than 100K,No Funds Returned
+Binance,June,Monday,Exploit,FL Less Than 100K,No Funds Returned
+Binance,August,Monday,Exit Scam,FL Less Than 100K,No Funds Returned
+Ethereum,December,Monday,Exit Scam,FL Low Millions,No Funds Returned
+Gnosis,March,Tuesday,Exploit,FL Low Millions,No Funds Returned
+Ethereum,December,Sunday,Exploit,FL Low Millions,No Funds Returned
+Binance,September,Friday,Exploit,FL Low 100K's,No Funds Returned
+Ethereum,July,Wednesday,Exploit,FL Low Millions,No Funds Returned
+Ethereum,June,Friday,Exit Scam,FL Low 100K's,No Funds Returned
+Ethereum,October,Monday,Exit Scam,FL Less Than 100K,No Funds Returned
+Binance,September,Thursday,Exploit,FL Low 100K's,No Funds Returned
+Other,April,Friday,Exploit,FL Low 100K's,FR Less Than 100K (>0)
+Ethereum,May,Wednesday,Exploit,FL High 100K's,No Funds Returned
+Ethereum,December,Saturday,Exit Scam,FL Less Than 100K,No Funds Returned
+Binance,September,Sunday,Exploit,FL High 100K's,No Funds Returned
+Binance,September,Thursday,Exit Scam,FL Low 100K's,No Funds Returned
+Ethereum,June,Thursday,Exploit,FL Low Millions,No Funds Returned
+Ethereum,March,Sunday,Exit Scam,FL Less Than 100K,No Funds Returned
+Binance,April,Thursday,Exploit,FL Low Millions,No Funds Returned
+Ethereum,December,Tuesday,Exit Scam,FL Less Than 100K,No Funds Returned
+Ethereum,October,Saturday,Exit Scam,FL Less Than 100K,No Funds Returned
+Solana,March,Wednesday,Exploit,FL Low Millions,No Funds Returned
+Ethereum,January,Sunday,Exit Scam,FL Low 100K's,No Funds Returned
+Ethereum,March,Sunday,Exploit,FL High 100K's,No Funds Returned
+Ethereum,October,Sunday,Exit Scam,FL Less Than 100K,No Funds Returned
+Other,March,Monday,Exploit,FL Low 100K's,No Funds Returned
+Binance,August,Monday,Exit Scam,FL Less Than 100K,No Funds Returned
+Binance,October,Friday,Exploit,FL High 100K's,No Funds Returned
+Ethereum,March,Monday,Exploit,FL Low Millions,No Funds Returned
+Ethereum,January,Tuesday,Exit Scam,FL Less Than 100K,No Funds Returned
+Ethereum,December,Sunday,Exit Scam,FL Less Than 100K,No Funds Returned
+Ethereum,July,Monday,Exploit,FL Low Millions,No Funds Returned
+Ethereum,December,Friday,Exit Scam,FL Less Than 100K,No Funds Returned
+Other,June,Thursday,Exploit,FL Low Millions,No Funds Returned
+Polygon,August,Saturday,Exploit,FL Less Than 100K,No Funds Returned
+Polygon,February,Tuesday,Exploit,FL Low Millions,No Funds Returned
+Ethereum,May,Tuesday,Exploit,FL Low 100K's,No Funds Returned
+Fantom,March,Wednesday,Exploit,FL Low Millions,No Funds Returned
+Binance,February,Monday,Exit Scam,FL Less Than 100K,No Funds Returned
+Ethereum,June,Saturday,Exploit,FL Less Than 100K,No Funds Returned
+Binance,January,Friday,Exit Scam,FL Less Than 100K,No Funds Returned
+Ethereum,February,Wednesday,Exploit,FL Low Millions,No Funds Returned
+Ethereum,September,Saturday,Exit Scam,FL Less Than 100K,No Funds Returned
+Binance,May,Friday,Exploit,FL Low Millions,No Funds Returned
+Other,July,Wednesday,Exit Scam,FL Low Millions,No Funds Returned
+Binance,March,Tuesday,Exit Scam,FL Less Than 100K,No Funds Returned
+Ethereum,June,Monday,Exploit,FL Low 100K's,No Funds Returned
+Ethereum,October,Tuesday,Exit Scam,FL Less Than 100K,No Funds Returned
+Other,July,Monday,Exit Scam,FL Low Millions,No Funds Returned
+Ethereum,October,Tuesday,Exploit,FL Low Millions,No Funds Returned
+Binance,May,Wednesday,Exit Scam,FL Low Millions,No Funds Returned
+Binance,June,Sunday,Exit Scam,FL Low 100K's,No Funds Returned
+Ethereum,July,Tuesday,Exploit,FL Less Than 100K,No Funds Returned
+Polygon,July,Wednesday,Exploit,FL Low Millions,No Funds Returned
+Avax,October,Saturday,Exploit,FL Low Millions,No Funds Returned
+Ethereum,February,Tuesday,Exit Scam,FL Less Than 100K,No Funds Returned
+xDAI,October,Sunday,Exploit,FL Low 100K's,No Funds Returned
+Polygon,September,Thursday,Exploit,FL Low 100K's,No Funds Returned
+Binance,May,Sunday,Exploit,FL Low Millions,No Funds Returned
+Ethereum,December,Tuesday,Exit Scam,FL Low Millions,No Funds Returned
+Other,December,Thursday,Exploit,FL High 100K's,No Funds Returned
+Binance,February,Monday,Exploit,FL Low 100K's,No Funds Returned
+Ethereum,August,Wednesday,Exploit,FL Low 100K's,No Funds Returned
+Ethereum,July,Saturday,Exploit,FL Low Millions,No Funds Returned
+Binance,October,Friday,Exploit,FL Low Millions,No Funds Returned
+Ethereum,March,Thursday,Exit Scam,FL Less Than 100K,No Funds Returned
+Ethereum,May,Wednesday,Exploit,FL Low Millions,No Funds Returned
+Ethereum,January,Tuesday,Exit Scam,FL Low 100K's,No Funds Returned
+Binance,June,Tuesday,Exploit,FL Less Than 100K,No Funds Returned
+Solana,January,Thursday,Exit Scam,FL Less Than 100K,No Funds Returned
+Polygon,June,Sunday,Exploit,FL Less Than 100K,No Funds Returned
+Ethereum,October,Sunday,Exit Scam,FL Less Than 100K,No Funds Returned
+Ethereum,October,Saturday,Exit Scam,FL Less Than 100K,No Funds Returned
+Ethereum,September,Thursday,Exit Scam,FL Less Than 100K,No Funds Returned
+Ethereum,June,Sunday,Exploit,FL Less Than 100K,No Funds Returned
+Ethereum,December,Friday,Exit Scam,FL Less Than 100K,No Funds Returned
+Ethereum,April,Sunday,Exploit,FL Low 100K's,FR Low 100K's
+Binance,June,Wednesday,Exit Scam,FL Low Millions,No Funds Returned
+CEX,December,Tuesday,Exploit,FL Low Millions,No Funds Returned
+Ethereum,October,Thursday,Exit Scam,FL Low 100K's,No Funds Returned
+Ethereum,March,Tuesday,Exploit,FL Low Millions,FR Low Millions
+Ethereum,September,Thursday,Exit Scam,FL Low 100K's,No Funds Returned
+Ethereum,February,Monday,Exploit,FL Low 100K's,No Funds Returned
+Binance,October,Monday,Exit Scam,FL Less Than 100K,No Funds Returned
+Binance,October,Sunday,Exploit,FL High 100K's,No Funds Returned
+Ethereum,January,Friday,Exit Scam,FL Less Than 100K,No Funds Returned
+Binance,October,Wednesday,Exploit,FL Less Than 100K,No Funds Returned
+Binance,September,Friday,Exit Scam,FL High 100K's,No Funds Returned
+Other,February,Wednesday,Exploit,FL Less Than 100K,No Funds Returned
+Ethereum,December,Thursday,Exit Scam,FL Less Than 100K,No Funds Returned
+Ethereum,December,Monday,Exit Scam,FL Less Than 100K,No Funds Returned
+Ethereum,February,Saturday,Exploit,FL Low 100K's,No Funds Returned
+CEX,February,Saturday,Exploit,FL Less Than 100K,No Funds Returned
+Polkadot,August,Sunday,Exploit,FL Low Millions,No Funds Returned
+Ethereum,July,Thursday,Exploit,FL Low Millions,No Funds Returned
+Other,October,Friday,Exploit,FL Low Millions,No Funds Returned
+Binance,August,Saturday,Exit Scam,FL Low 100K's,No Funds Returned
+Binance,March,Friday,Exit Scam,FL Less Than 100K,No Funds Returned
+Ethereum,October,Tuesday,Exit Scam,FL Less Than 100K,No Funds Returned
+Ethereum,January,Tuesday,Exit Scam,FL Less Than 100K,No Funds Returned
+Ethereum,January,Friday,Exit Scam,FL Less Than 100K,No Funds Returned
+Ethereum,October,Thursday,Exploit,FL Low Millions,No Funds Returned
+Binance,August,Tuesday,Exploit,FL Low Millions,No Funds Returned
+Binance,August,Wednesday,Exploit,FL High 100K's,No Funds Returned
+Ethereum,February,Saturday,Exit Scam,FL High 100K's,No Funds Returned
+Binance,March,Thursday,Exit Scam,FL Less Than 100K,No Funds Returned
+Ethereum,August,Tuesday,Exit Scam,FL Low 100K's,No Funds Returned
+Polygon,July,Saturday,Exploit,FL Less Than 100K,No Funds Returned
+Ethereum,December,Wednesday,Exit Scam,FL Less Than 100K,No Funds Returned
+Ethereum,August,Thursday,Exploit,FL High 100K's,No Funds Returned
+Binance,April,Friday,Exploit,FL Low Millions,No Funds Returned
+Binance,February,Monday,Exit Scam,FL Less Than 100K,No Funds Returned
+Ethereum,June,Friday,Exploit,FL Low Millions,No Funds Returned
+Binance,June,Wednesday,Exit Scam,FL Less Than 100K,No Funds Returned
+Ethereum,March,Thursday,Exploit,FL Low 100K's,No Funds Returned
+Ethereum,December,Monday,Exit Scam,FL Less Than 100K,No Funds Returned
+Binance,April,Wednesday,Exploit,FL Low Millions,No Funds Returned
+Ethereum,January,Sunday,Exit Scam,FL Less Than 100K,No Funds Returned
+Ethereum,March,Tuesday,Exit Scam,FL Low 100K's,No Funds Returned
+Binance,March,Tuesday,Exit Scam,FL Low Millions,No Funds Returned
+Binance,May,Wednesday,Exploit,FL High 100K's,No Funds Returned
+Ethereum,December,Wednesday,Exit Scam,FL Less Than 100K,No Funds Returned
+Ethereum,October,Monday,Exit Scam,FL Low Millions,No Funds Returned
+Ethereum,August,Monday,Exit Scam,FL Less Than 100K,No Funds Returned
+Binance,August,Sunday,Exploit,FL Low 100K's,No Funds Returned
+Ethereum,June,Sunday,Exploit,FL High 100K's,No Funds Returned
+Binance,October,Thursday,Exploit,FL Low Millions,No Funds Returned
+Ethereum,December,Monday,Exit Scam,FL Less Than 100K,No Funds Returned
+EOS,September,Wednesday,Exit Scam,FL Low Millions,No Funds Returned
+Ethereum,December,Sunday,Exit Scam,FL Low 100K's,No Funds Returned
+Ethereum,October,Monday,Exploit,FL Low Millions,FR Low Millions
+Ethereum,September,Saturday,Exploit,FL Low Millions,No Funds Returned
+Ethereum,March,Monday,Exploit,FL High 100K's,No Funds Returned
+Binance,March,Monday,Exploit,FL Low 100K's,No Funds Returned
+Binance,October,Friday,Exit Scam,FL Low Millions,No Funds Returned
+Binance,September,Monday,Exit Scam,FL Low 100K's,No Funds Returned
+Binance,May,Sunday,Exit Scam,FL Low Millions,No Funds Returned
+Ethereum,January,Tuesday,Exit Scam,FL Low 100K's,No Funds Returned
+CEX,January,Wednesday,Exploit,FL Low 100K's,No Funds Returned
+CEX,September,Friday,Exploit,FL Low Millions,No Funds Returned
+Ethereum,December,Tuesday,Exit Scam,FL Less Than 100K,No Funds Returned
+Binance,January,Wednesday,Exit Scam,FL Low Millions,No Funds Returned
+Binance,December,Wednesday,Exploit,FL Low Millions,No Funds Returned
+Ethereum,January,Saturday,Exploit,FL Less Than 100K,No Funds Returned
+Solana,August,Thursday,Exploit,FL Less Than 100K,FR Less Than 100K (>0)
+Ethereum,September,Thursday,Exit Scam,FL High 100K's,No Funds Returned
+Binance,June,Monday,Exit Scam,FL Low 100K's,No Funds Returned
+Ethereum,August,Tuesday,Exploit,FL High 100K's,FR Low 100K's
+Ethereum,October,Wednesday,Exploit,FL Low 100K's,No Funds Returned
+Ethereum,July,Thursday,Exploit,FL Less Than 100K,No Funds Returned
+Binance,August,Sunday,Exit Scam,FL Less Than 100K,No Funds Returned
+Binance,August,Saturday,Exploit,FL Low 100K's,No Funds Returned
+Binance,September,Sunday,Exploit,FL Low Millions,No Funds Returned
+CEX,December,Monday,Exploit,FL Low Millions,No Funds Returned
+Binance,October,Wednesday,Exploit,FL Low Millions,No Funds Returned
+CEX,October,Friday,Exploit,FL Low Millions,FR Low Millions
+Binance,July,Tuesday,Exploit,FL Low 100K's,No Funds Returned
+Ethereum,October,Wednesday,Exit Scam,FL Low Millions,No Funds Returned
+Other,March,Sunday,Exploit,FL Less Than 100K,No Funds Returned
+Fantom,December,Sunday,Exploit,FL Low Millions,No Funds Returned
+Binance,August,Thursday,Exit Scam,FL Less Than 100K,No Funds Returned
+Binance,August,Monday,Exploit,FL Low Millions,No Funds Returned
+CEX,July,Friday,Exploit,FL Low 100K's,No Funds Returned
+Polygon,December,Wednesday,Exploit,FL Low Millions,No Funds Returned
+Binance,August,Tuesday,Exit Scam,FL Low 100K's,No Funds Returned
+Avax,September,Tuesday,Exploit,FL Low Millions,No Funds Returned
+Ethereum,October,Friday,Exit Scam,FL Less Than 100K,No Funds Returned
+CEX,June,Monday,Exit Scam,FL High 100K's,No Funds Returned
+Ethereum,October,Thursday,Exit Scam,FL Less Than 100K,No Funds Returned
+Ethereum,September,Tuesday,Exploit,FL Low Millions,No Funds Returned
+Ethereum,October,Tuesday,Exit Scam,FL Less Than 100K,No Funds Returned
+Other,September,Friday,Exploit,FL Low 100K's,No Funds Returned
+Ethereum,June,Saturday,Exit Scam,FL High 100K's,No Funds Returned
+Solana,January,Sunday,Exit Scam,FL Low Millions,No Funds Returned
+CEX,January,Saturday,Exploit,FL Low Millions,No Funds Returned
+Solana,December,Tuesday,Exploit,FL Low Millions,FR Low Millions
+CEX,October,Friday,Exploit,FL High 100K's,No Funds Returned
+Binance,May,Sunday,Exploit,FL Low Millions,No Funds Returned
+Ethereum,December,Thursday,Exit Scam,FL Less Than 100K,No Funds Returned
+Binance,April,Tuesday,Exploit,FL Low Millions,No Funds Returned
+CEX,July,Friday,Exit Scam,FL Low Millions,No Funds Returned
+Ethereum,December,Friday,Exit Scam,FL Less Than 100K,No Funds Returned
+Ethereum,December,Tuesday,Exit Scam,FL Less Than 100K,No Funds Returned
+Ethereum,December,Monday,Exit Scam,FL Less Than 100K,No Funds Returned
+Fantom,May,Thursday,Exit Scam,FL Low Millions,No Funds Returned
+Ethereum,April,Saturday,Exploit,FL Low Millions,FR Low Millions
+Binance,August,Sunday,Exit Scam,FL Less Than 100K,No Funds Returned
+Other,October,Sunday,Exploit,FL Low 100K's,No Funds Returned
+Binance,July,Wednesday,Exit Scam,FL Less Than 100K,No Funds Returned
+Ethereum,December,Saturday,Exit Scam,FL Less Than 100K,No Funds Returned
+Ethereum,August,Saturday,Exploit,FL Low Millions,No Funds Returned
+Ethereum,September,Tuesday,Exploit,FL Low Millions,FR Low Millions
+Ethereum,January,Tuesday,Exploit,FL Low 100K's,No Funds Returned
+CEX,September,Friday,Exploit,FL Low Millions,FR Low Millions
+CEX,February,Monday,Exploit,FL Low Millions,No Funds Returned
+Ronin,March,Tuesday,Exploit,FL High Millions,FR Low Millions
+Ethereum,February,Monday,Exit Scam,FL Low Millions,No Funds Returned
+Ethereum,July,Tuesday,Exploit,FL Low 100K's,No Funds Returned
+CEX,April,Friday,Exploit,FL Low 100K's,No Funds Returned
+Ethereum,May,Friday,Exploit,FL Low Millions,No Funds Returned
+Ethereum,June,Thursday,Exploit,FL Low 100K's,No Funds Returned
+Ethereum,January,Friday,Exit Scam,FL Less Than 100K,No Funds Returned
+Other,March,Wednesday,Exploit,FL Low 100K's,No Funds Returned
+Ethereum,May,Saturday,Exploit,FL Low Millions,No Funds Returned
+CEX,April,Friday,Exploit,FL Low 100K's,No Funds Returned
+Polygon,July,Friday,Exploit,FL Low Millions,FR Low Millions
+CEX,July,Wednesday,Exploit,FL Less Than 100K,No Funds Returned
+Binance,February,Monday,Exit Scam,FL Low 100K's,No Funds Returned
+CEX,June,Saturday,Exploit,FL Low Millions,No Funds Returned
+Other,October,Sunday,Exploit,FL Low Millions,FR Low Millions
+Ethereum,October,Monday,Exit Scam,FL Less Than 100K,No Funds Returned
+Ethereum,October,Friday,Exploit,FL Low Millions,No Funds Returned
+Binance,June,Monday,Exploit,FL High 100K's,No Funds Returned
+Binance,July,Friday,Exploit,FL Low Millions,No Funds Returned
+Ethereum,June,Thursday,Exit Scam,FL High 100K's,No Funds Returned
+Ethereum,January,Monday,Exit Scam,FL Less Than 100K,No Funds Returned
+Binance,February,Sunday,Exploit,FL Low Millions,No Funds Returned
+Ethereum,February,Sunday,Exit Scam,FL Less Than 100K,No Funds Returned
+Ethereum,October,Monday,Exit Scam,FL Less Than 100K,No Funds Returned
+Ethereum,October,Monday,Exploit,FL Low Millions,No Funds Returned
+Ethereum,January,Tuesday,Exit Scam,FL Low 100K's,No Funds Returned
+Binance,May,Saturday,Exploit,FL Less Than 100K,No Funds Returned
+Binance,March,Sunday,Exploit,FL High 100K's,No Funds Returned
+Ethereum,October,Friday,Exit Scam,FL Less Than 100K,No Funds Returned
+Heco,March,Wednesday,Exit Scam,FL Low 100K's,FR Low 100K's
+Ethereum,May,Sunday,Exploit,FL Low Millions,No Funds Returned
+Other,February,Wednesday,Exploit,FL Low Millions,No Funds Returned
+CEX,October,Saturday,Exploit,FL Low Millions,No Funds Returned
+Ethereum,July,Saturday,Exploit,FL Low Millions,No Funds Returned
+CEX,October,Sunday,Exploit,FL Low Millions,No Funds Returned
+Polygon,June,Sunday,Exploit,FL High 100K's,No Funds Returned
+Binance,January,Tuesday,Exit Scam,FL Low Millions,No Funds Returned
+CEX,May,Thursday,Exploit,FL Low Millions,No Funds Returned
+Ethereum,April,Friday,Exploit,FL Less Than 100K,FR Less Than 100K (>0)
+Ethereum,August,Tuesday,Exploit,FL Low Millions,No Funds Returned
+Cronos,February,Wednesday,Exploit,FL Low Millions,No Funds Returned
+Cronos,December,Sunday,Exit Scam,FL Low 100K's,No Funds Returned
+Binance,June,Tuesday,Exploit,FL Low Millions,No Funds Returned
+Ethereum,February,Sunday,Exploit,FL High 100K's,No Funds Returned
+Binance,May,Sunday,Exit Scam,FL Low Millions,No Funds Returned
+Binance,September,Tuesday,Exploit,FL Low Millions,No Funds Returned
+Ethereum,March,Saturday,Exit Scam,FL Low 100K's,No Funds Returned
+Ethereum,April,Sunday,Exit Scam,FL Less Than 100K,No Funds Returned
+Ethereum,January,Friday,Exit Scam,FL Less Than 100K,No Funds Returned
+Fantom,May,Sunday,Exploit,FL Low Millions,No Funds Returned
+Binance,June,Tuesday,Exit Scam,FL Less Than 100K,No Funds Returned
+CEX,October,Saturday,Exit Scam,FL Low Millions,No Funds Returned
+Ethereum,September,Wednesday,Exit Scam,FL Low Millions,No Funds Returned
+CEX,February,Monday,Exploit,FL Low Millions,No Funds Returned
+Ethereum,October,Tuesday,Exit Scam,FL Less Than 100K,No Funds Returned
+Binance,March,Thursday,Exploit,FL Low Millions,No Funds Returned
+Ethereum,September,Thursday,Exploit,FL Low Millions,FR Low Millions
+Ethereum,December,Thursday,Exit Scam,FL Less Than 100K,No Funds Returned
+CEX,January,Friday,Exploit,FL High Millions,FR High Millions
+Ethereum,January,Wednesday,Exit Scam,FL Less Than 100K,No Funds Returned
+Ethereum,January,Thursday,Exit Scam,FL Low 100K's,No Funds Returned
+Binance,September,Saturday,Exploit,FL Low 100K's,No Funds Returned
+CEX,January,Monday,Exit Scam,FL Billions,FR Low Millions
+Ethereum,December,Tuesday,Exploit,FL Low Millions,No Funds Returned
+Solana,July,Saturday,Exploit,FL Low Millions,FR Low Millions
+Ethereum,January,Monday,Exploit,FL Low Millions,No Funds Returned
+Ethereum,January,Monday,Exploit,FL Less Than 100K,No Funds Returned
+Ethereum,October,Friday,Exit Scam,FL Less Than 100K,No Funds Returned
+Binance,September,Saturday,Exit Scam,FL Less Than 100K,No Funds Returned
+Binance,February,Friday,Exploit,FL High 100K's,No Funds Returned
+Ethereum,December,Saturday,Exit Scam,FL Less Than 100K,No Funds Returned
+Binance,January,Tuesday,Exploit,FL Low 100K's,No Funds Returned
+Polygon,October,Sunday,Exploit,FL Low 100K's,No Funds Returned
+Ethereum,December,Wednesday,Exploit,FL Low 100K's,No Funds Returned
+Ethereum,February,Friday,Exploit,FL Low Millions,No Funds Returned
+Ethereum,October,Thursday,Exit Scam,FL Less Than 100K,No Funds Returned
+CEX,January,Sunday,Exploit,FL Low Millions,No Funds Returned
+CEX,July,Saturday,Exploit,FL Low Millions,No Funds Returned
+Binance,October,Monday,Exit Scam,FL Less Than 100K,No Funds Returned
+Ethereum,March,Sunday,Exploit,FL Low Millions,No Funds Returned
+Polygon,May,Saturday,Exploit,FL Low 100K's,No Funds Returned
+Ethereum,December,Wednesday,Exit Scam,FL Less Than 100K,No Funds Returned
+Binance,August,Wednesday,Exploit,FL Low Millions,FR Low Millions
+CEX,March,Sunday,Exploit,FL High 100K's,No Funds Returned
+Ethereum,May,Monday,Exploit,FL Low Millions,No Funds Returned
+Binance,May,Sunday,Exploit,FL Low Millions,No Funds Returned
+Ethereum,October,Saturday,Exit Scam,FL Less Than 100K,No Funds Returned
+Binance,August,Friday,Exit Scam,FL Less Than 100K,No Funds Returned
+Other,April,Tuesday,Exploit,FL Low 100K's,No Funds Returned
+Binance,June,Tuesday,Exit Scam,FL Low Millions,No Funds Returned
+Binance,October,Saturday,Exploit,FL Low 100K's,No Funds Returned
+Binance,February,Monday,Exit Scam,FL Less Than 100K,No Funds Returned
+Binance,August,Sunday,Exit Scam,FL Low 100K's,No Funds Returned
+Binance,September,Thursday,Exploit,FL Low Millions,No Funds Returned
+Binance,February,Wednesday,Exploit,FL Low 100K's,No Funds Returned
+Ethereum,March,Sunday,Exit Scam,FL Low 100K's,No Funds Returned
+Fantom,December,Sunday,Exit Scam,FL Less Than 100K,No Funds Returned
+Binance,January,Saturday,Exit Scam,FL Low 100K's,No Funds Returned
+Ethereum,March,Monday,Exit Scam,FL Low 100K's,No Funds Returned
+Ethereum,October,Saturday,Exit Scam,FL Less Than 100K,No Funds Returned
+Fantom,August,Wednesday,Exploit,FL Low 100K's,FR Low 100K's
+Ethereum,May,Saturday,Exploit,FL High 100K's,No Funds Returned
+Polygon,October,Thursday,Exit Scam,FL High 100K's,No Funds Returned
+Ethereum,December,Monday,Exit Scam,FL Less Than 100K,No Funds Returned
+Other,July,Monday,Exploit,FL Low 100K's,No Funds Returned
+Ethereum,January,Wednesday,Exit Scam,FL Less Than 100K,No Funds Returned
+Ethereum,January,Wednesday,Exit Scam,FL Less Than 100K,No Funds Returned
+CEX,May,Friday,Exploit,FL Less Than 100K,No Funds Returned
+Binance,June,Saturday,Exit Scam,FL Low 100K's,No Funds Returned
+Ethereum,July,Sunday,Exploit,FL Low 100K's,No Funds Returned
+CEX,May,Tuesday,Exploit,FL Low Millions,No Funds Returned
+Ethereum,February,Monday,Exit Scam,FL Less Than 100K,No Funds Returned
+CEX,September,Tuesday,Exploit,FL Low Millions,No Funds Returned
+Ethereum,February,Monday,Exploit,FL Low Millions,No Funds Returned
+CEX,July,Thursday,Exploit,FL Low Millions,FR Low Millions
+Ethereum,December,Tuesday,Exit Scam,FL Less Than 100K,No Funds Returned
+Ethereum,October,Saturday,Exit Scam,FL High 100K's,No Funds Returned
+Ethereum,December,Friday,Exploit,FL Low Millions,FR Low Millions
+Ethereum,June,Monday,Exploit,FL Low Millions,FR Low Millions
+Binance,August,Wednesday,Exploit,FL Low 100K's,No Funds Returned
+Binance,July,Tuesday,Exit Scam,FL Low Millions,No Funds Returned
+CEX,December,Saturday,Exploit,FL Low Millions,No Funds Returned
+Binance,February,Monday,Exit Scam,FL Low Millions,No Funds Returned
+Ethereum,October,Friday,Exit Scam,FL Less Than 100K,No Funds Returned
+Ethereum,February,Monday,Exit Scam,FL Less Than 100K,No Funds Returned
+Ethereum,January,Thursday,Exit Scam,FL Less Than 100K,No Funds Returned
+Other,October,Sunday,Exploit,FL High 100K's,No Funds Returned
+Ethereum,January,Friday,Exit Scam,FL Less Than 100K,No Funds Returned
+Ethereum,December,Friday,Exit Scam,FL Less Than 100K,No Funds Returned
+Ethereum,October,Wednesday,Exploit,FL Low Millions,No Funds Returned
+EOS,September,Friday,Exploit,FL Less Than 100K,No Funds Returned
+CEX,June,Saturday,Exploit,FL Low 100K's,No Funds Returned
+CEX,August,Sunday,Exploit,FL Low Millions,No Funds Returned
+Ethereum,May,Saturday,Exploit,FL Less Than 100K,No Funds Returned
+Ethereum,May,Sunday,Exploit,FL Low Millions,FR Low Millions
+Binance,March,Thursday,Exit Scam,FL Less Than 100K,No Funds Returned
+Binance,June,Thursday,Exploit,FL Low Millions,No Funds Returned
+Binance,March,Wednesday,Exit Scam,FL Less Than 100K,No Funds Returned
+Ethereum,January,Monday,Exploit,FL Low Millions,FR Less Than 100K (>0)
+Binance,September,Monday,Exit Scam,FL Low 100K's,No Funds Returned
+OKExChain,December,Wednesday,Exploit,FL Low 100K's,No Funds Returned
+Binance,June,Saturday,Exit Scam,FL Low 100K's,No Funds Returned
+Fuse,March,Thursday,Exploit,FL Low Millions,No Funds Returned
+Binance,April,Saturday,Exit Scam,FL Less Than 100K,No Funds Returned
+CEX,February,Wednesday,Exploit,FL High 100K's,No Funds Returned
+Binance,June,Friday,Exploit,FL Low 100K's,No Funds Returned
+Ethereum,February,Tuesday,Exploit,FL Less Than 100K,No Funds Returned
+Avax,July,Thursday,Exit Scam,FL Less Than 100K,No Funds Returned
+CEX,August,Monday,Exit Scam,FL High 100K's,No Funds Returned
+CEX,July,Thursday,Exit Scam,FL Low Millions,No Funds Returned
+Ethereum,February,Sunday,Exit Scam,FL Less Than 100K,No Funds Returned
+Ethereum,February,Thursday,Exit Scam,FL Low 100K's,No Funds Returned
+Binance,September,Monday,Exit Scam,FL Low 100K's,No Funds Returned
+Ethereum,May,Wednesday,Exploit,FL Low Millions,No Funds Returned
+Ethereum,December,Tuesday,Exploit,FL Low Millions,No Funds Returned
+Binance,March,Thursday,Exit Scam,FL Less Than 100K,No Funds Returned
+Polygon,September,Friday,Exit Scam,FL Low Millions,No Funds Returned
+Ethereum,April,Monday,Exploit,FL Low Millions,No Funds Returned
+Cronos,May,Wednesday,Exploit,FL Low Millions,No Funds Returned
+Binance,May,Friday,Exit Scam,FL Low Millions,No Funds Returned
+Ethereum,September,Sunday,Exploit,FL Low Millions,FR Low Millions
+Other,May,Tuesday,Exploit,FL Less Than 100K,No Funds Returned
+Solana,August,Friday,Exit Scam,FL Low Millions,FR Low Millions
+Ethereum,September,Friday,Exploit,FL Low 100K's,No Funds Returned
+Ethereum,February,Friday,Exploit,FL Low Millions,FR Low Millions
+Polkadot,April,Monday,Exploit,FL Low Millions,No Funds Returned
+Ethereum,April,Sunday,Exploit,FL Low Millions,FR Low Millions
+Binance,June,Wednesday,Exploit,FL Low Millions,No Funds Returned
+Ethereum,August,Tuesday,Exploit,FL High Millions,FR High Millions
+Binance,July,Wednesday,Exit Scam,FL Low 100K's,No Funds Returned
+Binance,May,Wednesday,Exit Scam,FL Low 100K's,No Funds Returned
+Ethereum,April,Friday,Exit Scam,FL Less Than 100K,No Funds Returned
+Ethereum,December,Wednesday,Exploit,FL Low Millions,No Funds Returned
+Binance,January,Thursday,Exit Scam,FL Low Millions,No Funds Returned
+Heco,July,Friday,Exploit,FL Low Millions,FR Low Millions
+Binance,March,Monday,Exit Scam,FL Low Millions,No Funds Returned
+Ethereum,October,Tuesday,Exit Scam,FL Less Than 100K,No Funds Returned
+Binance,June,Thursday,Exit Scam,FL Less Than 100K,No Funds Returned
+Ethereum,October,Monday,Exit Scam,FL Low 100K's,No Funds Returned
+Binance,August,Wednesday,Exploit,FL Low 100K's,No Funds Returned
+Binance,May,Tuesday,Exploit,FL Low Millions,No Funds Returned
+Ethereum,April,Monday,Exploit,FL Low Millions,No Funds Returned
+Ethereum,January,Thursday,Exit Scam,FL Low 100K's,No Funds Returned
+Binance,December,Thursday,Exit Scam,FL Less Than 100K,No Funds Returned
+Other,September,Sunday,Exit Scam,FL Low Millions,No Funds Returned
+Ethereum,May,Thursday,Exploit,FL High 100K's,FR High 100K's
+Ethereum,October,Saturday,Exploit,FL Low Millions,No Funds Returned
+CEX,July,Thursday,Exploit,FL Low Millions,No Funds Returned
+CEX,March,Thursday,Exploit,FL Low 100K's,No Funds Returned
+Binance,May,Tuesday,Exit Scam,FL Low 100K's,No Funds Returned
+Ethereum,October,Friday,Exit Scam,FL Low 100K's,No Funds Returned
+Binance,May,Wednesday,Exploit,FL Low Millions,FR Low 100K's
+Binance,May,Sunday,Exploit,FL Less Than 100K,No Funds Returned
+Ethereum,October,Tuesday,Exit Scam,FL Less Than 100K,No Funds Returned
+CEX,December,Saturday,Exploit,FL Low Millions,No Funds Returned
+CEX,March,Sunday,Exit Scam,FL Low Millions,No Funds Returned
+Binance,January,Saturday,Exit Scam,FL Less Than 100K,No Funds Returned
+Binance,January,Friday,Exploit,FL Low 100K's,No Funds Returned
+Binance,May,Saturday,Exploit,FL Low Millions,No Funds Returned
+Ethereum,January,Thursday,Exit Scam,FL Low 100K's,No Funds Returned
+CEX,October,Wednesday,Exploit,FL High 100K's,No Funds Returned
+Ethereum,October,Sunday,Exit Scam,FL Low 100K's,No Funds Returned
+CEX,May,Friday,Exploit,FL Low 100K's,No Funds Returned
+Ethereum,December,Wednesday,Exit Scam,FL Low 100K's,No Funds Returned
+Ethereum,December,Tuesday,Exit Scam,FL Less Than 100K,No Funds Returned
+Other,March,Sunday,Exit Scam,FL Low 100K's,No Funds Returned
+Binance,June,Thursday,Exit Scam,FL Less Than 100K,No Funds Returned
+Ethereum,October,Wednesday,Exit Scam,FL Less Than 100K,No Funds Returned
+Binance,February,Friday,Exploit,FL Less Than 100K,No Funds Returned
+Binance,May,Sunday,Exit Scam,FL Less Than 100K,No Funds Returned
+Ethereum,August,Sunday,Exploit,FL Low Millions,No Funds Returned
+Binance,May,Saturday,Exploit,FL Low Millions,No Funds Returned
+Other,June,Thursday,Exploit,FL Low Millions,FR Low Millions
+Binance,October,Wednesday,Exit Scam,FL Low 100K's,No Funds Returned
+Binance,August,Saturday,Exit Scam,FL Low 100K's,No Funds Returned
+Other,July,Wednesday,Exit Scam,FL Low Millions,No Funds Returned
+CEX,March,Saturday,Exploit,FL High 100K's,No Funds Returned
+Other,January,Sunday,Exploit,FL Low Millions,No Funds Returned
+Binance,May,Tuesday,Exploit,FL Less Than 100K,No Funds Returned
+Binance,July,Sunday,Exploit,FL High 100K's,FR High 100K's
+CEX,June,Sunday,Exploit,FL Low Millions,No Funds Returned
+Binance,July,Tuesday,Exit Scam,FL Less Than 100K,No Funds Returned
+Ethereum,December,Monday,Exploit,FL Low Millions,FR Low Millions
+Ethereum,June,Thursday,Exit Scam,FL Low Millions,No Funds Returned
+Binance,February,Monday,Exit Scam,FL Low 100K's,No Funds Returned
+CEX,February,Wednesday,Exploit,FL Low 100K's,No Funds Returned
+CEX,September,Wednesday,Exploit,FL Low 100K's,No Funds Returned
+Binance,March,Monday,Exit Scam,FL Low 100K's,No Funds Returned
+Ethereum,April,Tuesday,Exit Scam,FL Less Than 100K,No Funds Returned
+Binance,December,Thursday,Exit Scam,FL Low 100K's,No Funds Returned
+Binance,October,Saturday,Exploit,FL Low Millions,No Funds Returned
+CEX,June,Tuesday,Exploit,FL Low Millions,No Funds Returned
+Ethereum,August,Saturday,Exploit,FL Low Millions,No Funds Returned
+Binance,June,Monday,Exploit,FL Low 100K's,No Funds Returned
+Ethereum,October,Saturday,Exit Scam,FL Less Than 100K,No Funds Returned
+Ethereum,May,Sunday,Exploit,FL Low Millions,No Funds Returned
+CEX,December,Friday,Exploit,FL Less Than 100K,No Funds Returned
+Other,September,Friday,Exploit,FL Low Millions,No Funds Returned
+Binance,July,Wednesday,Exit Scam,FL Less Than 100K,No Funds Returned
+CEX,August,Tuesday,Exploit,FL Low Millions,FR Low Millions
+Binance,June,Wednesday,Exit Scam,FL Less Than 100K,No Funds Returned
+Binance,June,Thursday,Exploit,FL Low 100K's,No Funds Returned
+Ethereum,January,Sunday,Exit Scam,FL Less Than 100K,No Funds Returned
+Binance,July,Wednesday,Exploit,FL Low 100K's,No Funds Returned
+Binance,December,Monday,Exit Scam,FL Less Than 100K,No Funds Returned
+Binance,July,Monday,Exit Scam,FL Low Millions,No Funds Returned
+Moonriver,February,Sunday,Exploit,FL Low Millions,No Funds Returned
+Ethereum,December,Monday,Exit Scam,FL Low 100K's,No Funds Returned
+Ethereum,June,Thursday,Exploit,FL High 100K's,No Funds Returned
+Ethereum,March,Wednesday,Exit Scam,FL Less Than 100K,No Funds Returned
+Binance,June,Wednesday,Exploit,FL Low 100K's,No Funds Returned
+Binance,October,Wednesday,Exploit,FL Low 100K's,No Funds Returned
+CEX,February,Sunday,Exploit,FL Low Millions,No Funds Returned
+Binance,February,Monday,Exit Scam,FL Low Millions,No Funds Returned
+Other,October,Friday,Exploit,FL Less Than 100K,No Funds Returned
+Other,January,Saturday,Exploit,FL Low 100K's,No Funds Returned
+CEX,July,Friday,Exploit,FL Low Millions,No Funds Returned
+Binance,June,Tuesday,Exploit,FL Low 100K's,No Funds Returned
+Ethereum,December,Wednesday,Exit Scam,FL Less Than 100K,No Funds Returned
+Polygon,August,Sunday,Exit Scam,FL Low Millions,No Funds Returned
+Ethereum,August,Monday,Exploit,FL Low Millions,FR Low Millions
+Binance,September,Tuesday,Exit Scam,FL Low 100K's,No Funds Returned
+Binance,October,Monday,Exit Scam,FL Low Millions,No Funds Returned
+Binance,April,Saturday,Exit Scam,FL Less Than 100K,No Funds Returned
+Ethereum,December,Monday,Exit Scam,FL Less Than 100K,No Funds Returned
+Ethereum,October,Saturday,Exploit,FL Low Millions,FR Low Millions
+Arbitrum,April,Saturday,Exploit,FL Low Millions,FR Low Millions
+Ethereum,July,Friday,Exploit,FL Low Millions,No Funds Returned
+CEX,July,Tuesday,Exploit,FL Less Than 100K,No Funds Returned
+Other,October,Tuesday,Exit Scam,FL Low 100K's,No Funds Returned
+Binance,May,Thursday,Exit Scam,FL Low Millions,No Funds Returned
+Binance,May,Sunday,Exit Scam,FL Low Millions,No Funds Returned
+Binance,December,Tuesday,Exit Scam,FL Less Than 100K,No Funds Returned
+CEX,July,Monday,Exit Scam,FL Low Millions,No Funds Returned
+Ethereum,January,Friday,Exploit,FL Low 100K's,No Funds Returned
+CEX,May,Friday,Exploit,FL Low 100K's,No Funds Returned
+Binance,May,Friday,Exit Scam,FL Low Millions,No Funds Returned
+Ethereum,October,Saturday,Exploit,FL Low Millions,FR Low Millions
+Binance,May,Wednesday,Exploit,FL High 100K's,No Funds Returned
+Ethereum,August,Thursday,Exploit,FL Low 100K's,No Funds Returned
+CEX,July,Saturday,Exploit,FL Low Millions,No Funds Returned
+Ethereum,December,Tuesday,Exploit,FL High 100K's,No Funds Returned
+Ethereum,July,Sunday,Exploit,FL Less Than 100K,No Funds Returned
+CEX,June,Sunday,Exploit,FL Low Millions,No Funds Returned
+Binance,October,Tuesday,Exploit,FL Low 100K's,No Funds Returned
+Binance,March,Tuesday,Exit Scam,FL High 100K's,No Funds Returned
+Binance,February,Monday,Exploit,FL Less Than 100K,No Funds Returned
+Binance,October,Sunday,Exit Scam,FL Low Millions,No Funds Returned
+CEX,June,Tuesday,Exploit,FL Low Millions,No Funds Returned
+CEX,February,Tuesday,Exit Scam,FL Low 100K's,No Funds Returned
+Other,June,Wednesday,Exploit,FL Low Millions,No Funds Returned
+Ethereum,February,Saturday,Exit Scam,FL Less Than 100K,No Funds Returned
+Ethereum,December,Saturday,Exit Scam,FL Less Than 100K,No Funds Returned
+Ethereum,October,Tuesday,Exit Scam,FL Less Than 100K,No Funds Returned
+Algorand,January,Saturday,Exploit,FL Low Millions,No Funds Returned
+CEX,May,Monday,Exploit,FL Low Millions,No Funds Returned
+Ethereum,September,Thursday,Exit Scam,FL Low 100K's,No Funds Returned
+Ethereum,April,Thursday,Exploit,FL Low Millions,No Funds Returned
+Ethereum,October,Saturday,Exploit,FL Low 100K's,No Funds Returned
+Ethereum,December,Sunday,Exit Scam,FL Less Than 100K,No Funds Returned
+Binance,July,Friday,Exit Scam,FL Low 100K's,No Funds Returned
+Ethereum,June,Friday,Exploit,FL Low 100K's,No Funds Returned
+Binance,July,Friday,Exit Scam,FL Low 100K's,No Funds Returned
+CEX,June,Wednesday,Exploit,FL Low Millions,FR Low Millions
+Ethereum,August,Thursday,Exploit,FL Low Millions,No Funds Returned
+Ethereum,October,Thursday,Exit Scam,FL High 100K's,No Funds Returned
+Ethereum,January,Saturday,Exit Scam,FL Less Than 100K,No Funds Returned
+Binance,June,Saturday,Exit Scam,FL Low 100K's,No Funds Returned
+Ethereum,March,Sunday,Exploit,FL Low Millions,FR High 100K's
+Binance,September,Thursday,Exit Scam,FL Less Than 100K,No Funds Returned
+Near,August,Sunday,Exploit,FL Low Millions,FR Low Millions
+Ethereum,December,Monday,Exit Scam,FL Less Than 100K,No Funds Returned
+Binance,July,Monday,Exit Scam,FL Low 100K's,No Funds Returned
+CEX,September,Thursday,Exit Scam,FL Less Than 100K,No Funds Returned
+Binance,March,Tuesday,Exit Scam,FL Less Than 100K,No Funds Returned
+CEX,July,Sunday,Exploit,FL Low Millions,No Funds Returned
+Binance,February,Monday,Exploit,FL Low Millions,No Funds Returned
+Ethereum,October,Monday,Exit Scam,FL Less Than 100K,No Funds Returned
+Ethereum,January,Wednesday,Exit Scam,FL Low 100K's,No Funds Returned
+Ethereum,February,Monday,Exit Scam,FL Less Than 100K,No Funds Returned
+Binance,June,Wednesday,Exit Scam,FL Less Than 100K,No Funds Returned
+CEX,August,Thursday,Exploit,FL Low Millions,No Funds Returned
+Ethereum,February,Tuesday,Exploit,FL High 100K's,No Funds Returned
+CEX,January,Monday,Exploit,FL Low Millions,FR Low Millions
+Ethereum,June,Saturday,Exploit,FL Low 100K's,No Funds Returned
+Other,January,Friday,Exploit,FL Low Millions,No Funds Returned
+Ethereum,October,Thursday,Exit Scam,FL Less Than 100K,No Funds Returned
+CEX,February,Monday,Exit Scam,FL Low Millions,No Funds Returned
+Polygon,August,Sunday,Exit Scam,FL Less Than 100K,No Funds Returned
+Solana,January,Tuesday,Exit Scam,FL Low Millions,No Funds Returned
+Ethereum,August,Tuesday,Exploit,FL Low 100K's,FR Low 100K's
+Polygon,July,Tuesday,Exploit,FL Low 100K's,No Funds Returned
+Ethereum,October,Monday,Exit Scam,FL Low 100K's,No Funds Returned
+Other,August,Wednesday,Exploit,FL Less Than 100K,No Funds Returned
+CEX,April,Thursday,Exploit,FL Low Millions,No Funds Returned
+Ethereum,August,Monday,Exploit,FL High 100K's,No Funds Returned
+Ethereum,February,Wednesday,Exit Scam,FL High 100K's,No Funds Returned
+Ethereum,December,Friday,Exit Scam,FL Low 100K's,No Funds Returned
+CEX,June,Monday,Exploit,FL Low Millions,No Funds Returned
+CEX,May,Thursday,Exit Scam,FL Billions,No Funds Returned
+CEX,July,Tuesday,Exploit,FL Low 100K's,No Funds Returned
+CEX,October,Monday,Exploit,FL Low 100K's,No Funds Returned
+Near,August,Tuesday,Exploit,FL Low 100K's,No Funds Returned
+CEX,July,Saturday,Exit Scam,FL Low Millions,No Funds Returned
+CEX,March,Monday,Exploit,FL Low 100K's,No Funds Returned
+Ethereum,February,Friday,Exploit,FL High 100K's,No Funds Returned
+Other,July,Wednesday,Exploit,FL Low 100K's,No Funds Returned
+Ethereum,January,Wednesday,Exit Scam,FL Less Than 100K,No Funds Returned
+Binance,March,Tuesday,Exit Scam,FL Low 100K's,No Funds Returned
+Ethereum,August,Monday,Exploit,FL Low Millions,No Funds Returned
+Binance,March,Sunday,Exit Scam,FL Low 100K's,No Funds Returned
+Ethereum,September,Wednesday,Exploit,FL Low Millions,No Funds Returned
+Binance,August,Friday,Exit Scam,FL Less Than 100K,No Funds Returned
+CEX,February,Tuesday,Exploit,FL Low Millions,No Funds Returned
+CEX,March,Tuesday,Exploit,FL Low Millions,No Funds Returned
+Ethereum,March,Wednesday,Exit Scam,FL Less Than 100K,No Funds Returned
+Binance,May,Friday,Exit Scam,FL Low 100K's,No Funds Returned
+Ethereum,March,Friday,Exit Scam,FL Less Than 100K,No Funds Returned
+Binance,June,Friday,Exit Scam,FL Low 100K's,No Funds Returned
+Binance,July,Wednesday,Exit Scam,FL Less Than 100K,No Funds Returned
+Ethereum,July,Friday,Exploit,FL Low 100K's,No Funds Returned
+Ethereum,June,Tuesday,Exploit,FL Less Than 100K,No Funds Returned
+Ethereum,January,Saturday,Exit Scam,FL Less Than 100K,No Funds Returned
+Binance,January,Monday,Exploit,FL High 100K's,FR Low 100K's
+CEX,June,Wednesday,Exit Scam,FL Billions,No Funds Returned
+EOS,December,Wednesday,Exploit,FL Low Millions,No Funds Returned
+Binance,September,Friday,Exit Scam,FL Less Than 100K,No Funds Returned
+Ethereum,July,Wednesday,Exploit,FL Low Millions,FR Low Millions
+Elrond,June,Sunday,Exploit,FL Low Millions,FR Low Millions
+Ethereum,October,Thursday,Exit Scam,FL Less Than 100K,No Funds Returned
+Binance,February,Wednesday,Exploit,FL Low Millions,No Funds Returned
+Ethereum,April,Saturday,Exploit,FL Low Millions,No Funds Returned
+Other,May,Friday,Exit Scam,FL Low Millions,No Funds Returned
+Binance,March,Tuesday,Exit Scam,FL Less Than 100K,No Funds Returned
+Binance,May,Monday,Exploit,FL Low Millions,No Funds Returned
+Harmony,December,Monday,Exploit,FL High 100K's,No Funds Returned
+Binance,July,Saturday,Exit Scam,FL Less Than 100K,No Funds Returned
+Ethereum,October,Saturday,Exit Scam,FL Less Than 100K,No Funds Returned
+Ethereum,October,Wednesday,Exploit,FL Low Millions,No Funds Returned
+Binance,October,Tuesday,Exit Scam,FL Low 100K's,No Funds Returned
+Binance,August,Sunday,Exit Scam,FL Less Than 100K,No Funds Returned
+Polygon,June,Saturday,Exit Scam,FL Low Millions,No Funds Returned
+Binance,January,Monday,Exit Scam,FL High 100K's,No Funds Returned
+Ethereum,December,Monday,Exit Scam,FL Less Than 100K,No Funds Returned
+CEX,August,Saturday,Exploit,FL Low Millions,No Funds Returned
+Ethereum,January,Tuesday,Exit Scam,FL Low 100K's,No Funds Returned
+CEX,January,Tuesday,Exploit,FL Less Than 100K,FR Less Than 100K (>0)
+Fantom,August,Tuesday,Exploit,FL Low Millions,No Funds Returned
+Binance,August,Tuesday,Exit Scam,FL Low Millions,No Funds Returned
+Ethereum,April,Monday,Exploit,FL Low Millions,No Funds Returned
+Binance,September,Saturday,Exit Scam,FL Less Than 100K,No Funds Returned
+Polygon,July,Wednesday,Exploit,FL Low 100K's,No Funds Returned
+Binance,March,Friday,Exit Scam,FL Less Than 100K,No Funds Returned
+Binance,May,Thursday,Exit Scam,FL Less Than 100K,No Funds Returned
+CEX,July,Friday,Exit Scam,FL Less Than 100K,No Funds Returned
+Binance,August,Thursday,Exit Scam,FL Less Than 100K,No Funds Returned
+Ethereum,October,Sunday,Exit Scam,FL Less Than 100K,No Funds Returned
+Binance,May,Wednesday,Exploit,FL High 100K's,No Funds Returned
+Ethereum,June,Friday,Exploit,FL Low Millions,No Funds Returned
+Binance,June,Wednesday,Exploit,FL Low 100K's,No Funds Returned
+Ethereum,September,Tuesday,Exploit,FL Low Millions,No Funds Returned
+Ethereum,October,Sunday,Exit Scam,FL Less Than 100K,No Funds Returned
+Binance,May,Tuesday,Exit Scam,FL Low Millions,No Funds Returned
+Ethereum,October,Thursday,Exploit,FL Low Millions,No Funds Returned
+Ethereum,October,Monday,Exit Scam,FL Less Than 100K,No Funds Returned
+Binance,June,Saturday,Exit Scam,FL Low 100K's,No Funds Returned
+Ethereum,October,Friday,Exploit,FL High 100K's,No Funds Returned
+Ethereum,October,Thursday,Exit Scam,FL Less Than 100K,No Funds Returned
+Ethereum,December,Friday,Exit Scam,FL Less Than 100K,No Funds Returned
+CEX,June,Tuesday,Exploit,FL Less Than 100K,No Funds Returned
+Binance,August,Sunday,Exit Scam,FL Less Than 100K,No Funds Returned
+Binance,May,Saturday,Exploit,FL Low Millions,No Funds Returned
+Ethereum,January,Tuesday,Exit Scam,FL Less Than 100K,No Funds Returned
+CEX,March,Friday,Exploit,FL Low Millions,FR Low Millions
+Ethereum,December,Tuesday,Exit Scam,FL Less Than 100K,No Funds Returned
+Terra Classic,May,Tuesday,Exploit,FL Low Millions,No Funds Returned
+Ethereum,January,Friday,Exit Scam,FL Less Than 100K,No Funds Returned
+Binance,May,Friday,Exploit,FL Low Millions,No Funds Returned
+Ethereum,September,Sunday,Exploit,FL High 100K's,No Funds Returned
+Binance,September,Thursday,Exit Scam,FL Less Than 100K,No Funds Returned
+Ethereum,July,Sunday,Exploit,FL Low Millions,No Funds Returned
+Ethereum,March,Wednesday,Exit Scam,FL Low 100K's,No Funds Returned
+Binance,June,Wednesday,Exploit,FL Low Millions,No Funds Returned
+Ethereum,October,Saturday,Exploit,FL Low 100K's,FR Low 100K's
+Ethereum,June,Saturday,Exploit,FL High 100K's,FR High 100K's
+Binance,January,Saturday,Exit Scam,FL Less Than 100K,No Funds Returned
+CEX,April,Monday,Exploit,FL Low 100K's,No Funds Returned
+Binance,October,Tuesday,Exploit,FL Low 100K's,No Funds Returned
+Binance,September,Wednesday,Exit Scam,FL Low 100K's,No Funds Returned
+Binance,August,Monday,Exit Scam,FL Less Than 100K,No Funds Returned
+Ethereum,January,Friday,Exit Scam,FL Low 100K's,No Funds Returned
+Binance,April,Monday,Exploit,FL Low Millions,No Funds Returned
+Fantom,April,Thursday,Exploit,FL Low Millions,No Funds Returned
+Ethereum,July,Monday,Exploit,FL Low Millions,No Funds Returned
+Binance,October,Saturday,Exploit,FL Low Millions,No Funds Returned
+Ethereum,February,Monday,Exit Scam,FL Less Than 100K,No Funds Returned
+Ethereum,August,Tuesday,Exit Scam,FL High 100K's,No Funds Returned
+Ethereum,December,Sunday,Exit Scam,FL Less Than 100K,No Funds Returned
+CEX,December,Saturday,Exit Scam,FL High 100K's,No Funds Returned
+Ethereum,October,Thursday,Exit Scam,FL Less Than 100K,No Funds Returned
+Ethereum,January,Saturday,Exit Scam,FL Less Than 100K,No Funds Returned
+Binance,June,Friday,Exploit,FL Low Millions,No Funds Returned
+Ethereum,October,Saturday,Exit Scam,FL Low 100K's,No Funds Returned
+Binance,September,Thursday,Exploit,FL Less Than 100K,No Funds Returned
+Ethereum,March,Saturday,Exploit,FL High 100K's,FR High 100K's
+CEX,January,Saturday,Exploit,FL Less Than 100K,No Funds Returned
+Avax,September,Tuesday,Exploit,FL Low Millions,No Funds Returned
+CEX,July,Monday,Exploit,FL High 100K's,No Funds Returned
+Ethereum,December,Tuesday,Exit Scam,FL Low Millions,No Funds Returned
+Ethereum,December,Monday,Exit Scam,FL Less Than 100K,No Funds Returned
+Ethereum,October,Thursday,Exit Scam,FL Less Than 100K,No Funds Returned
+CEX,June,Tuesday,Exit Scam,FL Low Millions,No Funds Returned
+Binance,August,Saturday,Exit Scam,FL Less Than 100K,No Funds Returned
+Ethereum,February,Thursday,Exit Scam,FL Less Than 100K,No Funds Returned
+Binance,September,Thursday,Exploit,FL Low 100K's,No Funds Returned
+Ethereum,September,Saturday,Exit Scam,FL Low 100K's,No Funds Returned
+Ethereum,January,Tuesday,Exploit,FL Low Millions,FR Low Millions
+Ethereum,October,Thursday,Exploit,FL Low Millions,No Funds Returned
+Ethereum,July,Saturday,Exploit,FL Low Millions,No Funds Returned
+Ethereum,October,Wednesday,Exit Scam,FL Less Than 100K,No Funds Returned
+Ethereum,December,Saturday,Exit Scam,FL Less Than 100K,No Funds Returned
+Ethereum,April,Saturday,Exploit,FL Low Millions,No Funds Returned
+Ethereum,October,Thursday,Exit Scam,FL Less Than 100K,No Funds Returned
+Binance,May,Tuesday,Exploit,FL Less Than 100K,No Funds Returned
+Binance,April,Friday,Exit Scam,FL Low 100K's,No Funds Returned
+Binance,June,Saturday,Exit Scam,FL Low 100K's,No Funds Returned
+Binance,March,Sunday,Exit Scam,FL Less Than 100K,No Funds Returned
+Ethereum,October,Friday,Exit Scam,FL Less Than 100K,No Funds Returned
+TRON,October,Wednesday,Exit Scam,FL Low Millions,No Funds Returned
+Ethereum,December,Wednesday,Exit Scam,FL Less Than 100K,No Funds Returned
+Ethereum,March,Friday,Exploit,FL Low Millions,No Funds Returned
+Ethereum,September,Thursday,Exploit,FL Low Millions,No Funds Returned
+Binance,October,Tuesday,Exploit,FL Less Than 100K,No Funds Returned
+Ethereum,July,Friday,Exploit,FL High 100K's,No Funds Returned
+Binance,February,Monday,Exit Scam,FL Low 100K's,No Funds Returned
+CEX,September,Thursday,Exploit,FL Low Millions,No Funds Returned
+Ethereum,December,Monday,Exit Scam,FL Less Than 100K,No Funds Returned
+Binance,February,Wednesday,Exit Scam,FL Less Than 100K,No Funds Returned
+CEX,December,Wednesday,Exploit,FL Low Millions,No Funds Returned
+Terra Classic,May,Sunday,Exploit,FL Billions,No Funds Returned
+Ethereum,October,Saturday,Exit Scam,FL Less Than 100K,No Funds Returned
+Ethereum,December,Saturday,Exit Scam,FL Less Than 100K,No Funds Returned
+Polygon,June,Monday,Exploit,FL Low 100K's,No Funds Returned
+Ethereum,October,Friday,Exit Scam,FL Low 100K's,No Funds Returned
+Ethereum,July,Monday,Exploit,FL High 100K's,No Funds Returned
+Binance,June,Tuesday,Exploit,FL Low Millions,FR Low Millions
+Ethereum,June,Thursday,Exploit,FL Low Millions,No Funds Returned
+Other,August,Sunday,Exploit,FL Low Millions,No Funds Returned
+Ethereum,December,Tuesday,Exit Scam,FL Less Than 100K,No Funds Returned
+Ethereum,December,Wednesday,Exit Scam,FL Less Than 100K,No Funds Returned
+Binance,March,Monday,Exit Scam,FL Low 100K's,No Funds Returned
+Ethereum,October,Monday,Exit Scam,FL Low 100K's,No Funds Returned
+CEX,April,Thursday,Exit Scam,FL Billions,No Funds Returned
+Binance,February,Sunday,Exit Scam,FL Low Millions,No Funds Returned
+Binance,December,Thursday,Exploit,FL Low 100K's,No Funds Returned
+Other,April,Wednesday,Exploit,FL Low 100K's,No Funds Returned
+Binance,September,Tuesday,Exit Scam,FL Less Than 100K,No Funds Returned
+Binance,March,Thursday,Exit Scam,FL Low Millions,No Funds Returned
+CEX,October,Friday,Exploit,FL Less Than 100K,No Funds Returned
+Klaytn,May,Thursday,Exit Scam,FL Low Millions,No Funds Returned
+CEX,February,Saturday,Exploit,FL Low Millions,No Funds Returned
+CEX,May,Tuesday,Exploit,FL Low Millions,No Funds Returned
+CEX,August,Friday,Exit Scam,FL Low Millions,No Funds Returned
+Ethereum,October,Friday,Exit Scam,FL Less Than 100K,No Funds Returned
+CEX,October,Saturday,Exploit,FL Low Millions,No Funds Returned
+Binance,July,Wednesday,Exploit,FL Less Than 100K,No Funds Returned
+Avax,October,Friday,Exit Scam,FL Low Millions,No Funds Returned
+Ethereum,September,Thursday,Exploit,FL Low 100K's,No Funds Returned
+Binance,February,Wednesday,Exploit,FL Low Millions,No Funds Returned
+Avax,September,Sunday,Exploit,FL Low Millions,No Funds Returned
+Ethereum,December,Thursday,Exploit,FL Low Millions,No Funds Returned
+Ethereum,October,Saturday,Exit Scam,FL Less Than 100K,No Funds Returned
+Ethereum,July,Sunday,Exploit,FL Less Than 100K,No Funds Returned
+Fantom,July,Friday,Exploit,FL Less Than 100K,No Funds Returned
+Ethereum,December,Friday,Exit Scam,FL Low 100K's,No Funds Returned
+Binance,September,Thursday,Exploit,FL Less Than 100K,No Funds Returned
+Ethereum,December,Wednesday,Exit Scam,FL Less Than 100K,No Funds Returned
+Other,October,Sunday,Exploit,FL Low Millions,No Funds Returned
+Polygon,October,Friday,Exploit,FL Low Millions,No Funds Returned
+Binance,October,Friday,Exploit,FL Low Millions,No Funds Returned
+Ethereum,July,Sunday,Exploit,FL Low Millions,No Funds Returned
+Ethereum,December,Thursday,Exit Scam,FL Less Than 100K,No Funds Returned
+Ethereum,July,Saturday,Exploit,FL Low Millions,No Funds Returned
+Solana,February,Wednesday,Exploit,FL Low Millions,FR Low Millions
+Ethereum,March,Sunday,Exit Scam,FL Less Than 100K,No Funds Returned
+Binance,August,Saturday,Exit Scam,FL High 100K's,No Funds Returned
+Other,October,Saturday,Exploit,FL Low Millions,No Funds Returned
+Ethereum,December,Thursday,Exit Scam,FL Less Than 100K,No Funds Returned
+Polygon,December,Sunday,Exploit,FL Low Millions,No Funds Returned
+Solana,July,Thursday,Exploit,FL Low Millions,No Funds Returned
+Solana,August,Wednesday,Exploit,FL Low Millions,No Funds Returned
+Ethereum,October,Tuesday,Exit Scam,FL Less Than 100K,No Funds Returned
+Ethereum,October,Friday,Exit Scam,FL Low Millions,No Funds Returned
+Ethereum,April,Friday,Exit Scam,FL Low 100K's,No Funds Returned
+Binance,July,Saturday,Exit Scam,FL Less Than 100K,No Funds Returned
+Ethereum,October,Wednesday,Exploit,FL Low Millions,No Funds Returned
+Binance,January,Wednesday,Exit Scam,FL High 100K's,No Funds Returned
+Binance,August,Wednesday,Exploit,FL Less Than 100K,No Funds Returned
+Binance,December,Tuesday,Exploit,FL High 100K's,No Funds Returned
+Ethereum,January,Sunday,Exit Scam,FL Less Than 100K,No Funds Returned
+Binance,May,Sunday,Exploit,FL Low Millions,No Funds Returned
+Binance,March,Thursday,Exit Scam,FL Less Than 100K,No Funds Returned
+Binance,October,Saturday,Exploit,FL Low Millions,FR Low Millions
+Other,October,Tuesday,Exploit,FL Low Millions,No Funds Returned
+Gnosis,March,Tuesday,Exploit,FL Low Millions,No Funds Returned
+Binance,July,Wednesday,Exit Scam,FL Less Than 100K,No Funds Returned
+Ethereum,October,Tuesday,Exit Scam,FL Less Than 100K,No Funds Returned
+Ethereum,October,Friday,Exit Scam,FL Less Than 100K,No Funds Returned
+CEX,October,Wednesday,Exploit,FL Low Millions,No Funds Returned
+Ethereum,February,Thursday,Exit Scam,FL Low Millions,No Funds Returned
+Ethereum,August,Sunday,Exploit,FL High 100K's,No Funds Returned
+Binance,July,Monday,Exploit,FL Less Than 100K,No Funds Returned
+Ethereum,July,Thursday,Exploit,FL Low Millions,No Funds Returned
+Binance,May,Tuesday,Exit Scam,FL Low 100K's,No Funds Returned
+Other,February,Monday,Exploit,FL Low Millions,No Funds Returned
+Binance,March,Sunday,Exploit,FL Low Millions,No Funds Returned
+Fantom,March,Monday,Exploit,FL Low Millions,No Funds Returned
+Ethereum,October,Saturday,Exit Scam,FL Less Than 100K,No Funds Returned
+Ethereum,December,Wednesday,Exit Scam,FL Less Than 100K,No Funds Returned
+Ethereum,October,Thursday,Exit Scam,FL Less Than 100K,No Funds Returned
+Ethereum,December,Friday,Exit Scam,FL Low 100K's,No Funds Returned
+Binance,March,Monday,Exit Scam,FL Low 100K's,No Funds Returned
+Ethereum,January,Monday,Exit Scam,FL Less Than 100K,No Funds Returned
+Other,March,Thursday,Exit Scam,FL Less Than 100K,No Funds Returned
+Binance,May,Thursday,Exploit,FL High 100K's,No Funds Returned
+CEX,March,Sunday,Exploit,FL Low 100K's,No Funds Returned
+Polygon,July,Sunday,Exploit,FL Low 100K's,FR Low 100K's
+Ethereum,August,Tuesday,Exploit,FL Low Millions,No Funds Returned
+Ethereum,October,Friday,Exit Scam,FL Less Than 100K,No Funds Returned
