@@ -90,7 +90,7 @@ df$month_of_attack <-as.factor(df$month_of_attack)
 
 df$log_funds_lost <- log(df$funds_lost + 1)
 df$log_funds_returned <- log(df$funds_returned + 1) 
-df <- subset(df, select = -c(funds_lost, funds_returned, month_of_attack))
+df <- subset(df, select = -c(funds_lost, funds_returned))
 ```
 
 
@@ -135,11 +135,12 @@ train.index <- createDataPartition(df$scam_networks_grouped,
 train <- df[ train.index,]
 test  <- df[-train.index,]
 
-#test$scam_type_grouped = ifelse(test$scam_type_grouped  == "Exploit", 1, 0)
+test$scam_type_grouped = ifelse(test$scam_type_grouped  == "Exploit", 1, 0)
 logistic_model <- glm(scam_type_grouped ~ ., data = train, family = "binomial")
 summary(logistic_model)
 prob_pred <- predict(logistic_model, type = 'response', newdata = test)
-y_pred = ifelse(prob_pred > 0.5, "Exploit", "Exit Scam")
+#y_pred = ifelse(prob_pred > 0.5, "Exploit", "Exit Scam")
+y_pred = ifelse(prob_pred > 0.5, 1, 0)
 test$scam_type_grouped <- as.factor(test$scam_type_grouped)
 (cm = table(test$scam_type_grouped, y_pred)) # NAs ignored
 #y_pred <- as.factor(unname(y_pred)) # for cfm plot
@@ -167,4 +168,26 @@ ggplotConfusionMatrix <- function(m){
 }
 cfm_train <- confusionMatrix(test$scam_type_grouped, y_pred)
 ggplotConfusionMatrix(cfm_train)
+```
+
+
+```{r roc, message=FALSE, warning=FALSE}
+# ROC-AUC Curve
+ROCPred <- prediction(y_pred, test$scam_type_grouped) 
+ROCPer <- performance(ROCPred, measure = "tpr", 
+                      x.measure = "fpr")
+
+auc <- performance(ROCPred, measure = "auc")
+auc <- auc@y.values[[1]]
+auc
+
+# Plotting curve
+plot(ROCPer)
+plot(ROCPer, colorize = TRUE, 
+     print.cutoffs.at = seq(0.1, by = 0.1), 
+     main = "ROC CURVE")
+abline(a = 0, b = 1)
+
+auc <- round(auc, 4)
+legend(.6, .4, auc, title = "AUC", cex = 1)
 ```
