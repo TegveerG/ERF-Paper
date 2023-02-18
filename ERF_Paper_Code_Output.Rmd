@@ -2,12 +2,13 @@
 title: "ERF Paper"
 author: "Tegveer Ghura"
 date: "2023-02-10"
-output: 
-  pdf_document:
+output:
+  word_document: default
   html_document:
     code_folding: show
   keep_tex: yes
   number_sections: yes
+  pdf_document: null
 ---
 
 ```{r setup, include=FALSE}
@@ -150,13 +151,14 @@ test  <- df[-train.index,]
 
 train$scam_type_grouped = ifelse(train$scam_type_grouped  == "Exploit", 1, 0)
 test$scam_type_grouped = ifelse(test$scam_type_grouped  == "Exploit", 1, 0)
-logistic_model <- glm(scam_type_grouped ~ ., data = train, family = "binomial")
+logistic_model <- glm(scam_type_grouped ~ ., data = train, family = binomial(link = "logit"))
 ```
 
 ```{r logmodelsummary, results='asis'}
-logistic_model_summary <- summary(logistic_model)
-stargazer::stargazer(logistic_model_summary,header=FALSE,title="Logistic Regression", 
-          type='html',digits=2)
+# logistic_model_summary <- summary(logistic_model)
+# logistic_model_summary
+stargazer::stargazer(logistic_model,type='html',report = "vc*stp",
+    ci = TRUE)
 ```
 
 ```{r logmodel2}
