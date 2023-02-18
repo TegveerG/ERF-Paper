@@ -3,8 +3,11 @@ title: "ERF Paper"
 author: "Tegveer Ghura"
 date: "2023-02-10"
 output: 
+  pdf_document:
   html_document:
     code_folding: show
+  keep_tex: yes
+  number_sections: yes
 ---
 
 ```{r setup, include=FALSE}
@@ -130,6 +133,13 @@ confusion_mtx = table(y_test, y_pred)
 confusion_mtx
 ```
 
+```{r rfmodel2}
+#Evaluate variable importance
+importance(classifier_RF)
+varImpPlot(classifier_RF)
+
+```
+
 ```{r logmodel}
 library(caret)
 set.seed(2377)
@@ -141,7 +151,15 @@ test  <- df[-train.index,]
 train$scam_type_grouped = ifelse(train$scam_type_grouped  == "Exploit", 1, 0)
 test$scam_type_grouped = ifelse(test$scam_type_grouped  == "Exploit", 1, 0)
 logistic_model <- glm(scam_type_grouped ~ ., data = train, family = "binomial")
-summary(logistic_model)
+```
+
+```{r logmodelsummary, results='asis'}
+logistic_model_summary <- summary(logistic_model)
+stargazer::stargazer(logistic_model_summary,header=FALSE,title="Logistic Regression", 
+          type='html',digits=2)
+```
+
+```{r logmodel2}
 train_prob_pred <- predict(logistic_model, type = 'response', newdata = train)
 test_prob_pred <- predict(logistic_model, type = 'response', newdata = test)
 #y_pred = ifelse(prob_pred > 0.5, "Exploit", "Exit Scam")
