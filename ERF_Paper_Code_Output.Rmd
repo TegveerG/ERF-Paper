@@ -136,9 +136,12 @@ confusion_mtx
 
 ```{r rfmodel2}
 #Evaluate variable importance
-importance(classifier_RF)
-varImpPlot(classifier_RF)
 
+jpeg("VarImpRF.jpg", width = 700, height = 350)
+importance(classifier_RF)
+varImpPlot(classifier_RF, main="Variable Importance: Random Forest")
+# Close the jpeg file
+dev.off() 
 ```
 
 ```{r logmodel}
