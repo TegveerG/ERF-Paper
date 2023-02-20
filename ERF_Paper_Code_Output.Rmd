@@ -180,6 +180,18 @@ test$scam_type_grouped <- as.factor(test$scam_type_grouped)
 #y_pred <- as.factor(unname(y_pred)) # for cfm plot
 ```
 
+```{r rfmodelcurves}
+# rf_train <- predict(classifier_RF, train, type = "prob")
+# rf_test <- predict(classifier_RF, test, type = "prob")
+# 
+# train.rf <- prediction(`rf_train$Exit Scam`, train$scam_type_grouped)
+# test.rf <- prediction(DT.1.pred[, 1], Prediction_Clean$warstds)
+# 
+# perf.CH <- performance(train.rf, "tpr", "fpr")
+# plot(perf.CH, main = "Logistic Regression Vs Decision Tree",
+#     col = "#009ECE")
+```
+
 ```{r cfmtrain}
 # 1. Open jpeg file
 #jpeg("Train_CFM.jpg", width = 350, height = 350)
@@ -248,9 +260,8 @@ test_pred <- prediction(test_prob_pred, test$scam_type_grouped)
 perf_train <- performance(train_pred, measure = "tpr", x.measure = "fpr")
 perf_test <- performance(test_pred, measure = "tpr", x.measure = "fpr")
 
-# Open a pdf and jpeg file
-#pdf("ROC.pdf", width = 6.5, height = 4.24) 
-#jpeg("ROC.jpg", width = 700, height = 350)
+# Open a pdf file
+pdf("ROC.pdf", width = 6.5, height = 4.24) 
 
 
 # Plot the ROC curve
@@ -261,9 +272,22 @@ legend(0.32, 0.25, c("Train Data", "Test Data"),
        col = c("#009ECE", "#FF9E00"), 
        bty = "n", lwd = 1.2, cex = 0.75)
 abline(0, 1, lty = 2, col = "gray") # Add y=x line
+# Close the pdf file
+dev.off()
 
-# Close the pdf/jpeg file
-#dev.off() 
+# Open a pdf and jpeg file
+#jpeg("ROC.jpg", width = 700, height = 350)
+# Plot the ROC curve
+plot(perf_train, main = "Logistic Regression AUC-ROC Curve",
+    col = "#009ECE")
+plot(perf_test, add = T, col = "#FF9E00", lwd = 1.5)
+legend(0.32, 0.25, c("Train Data", "Test Data"), 
+       col = c("#009ECE", "#FF9E00"), 
+       bty = "n", lwd = 1.2, cex = 0.75)
+abline(0, 1, lty = 2, col = "gray") # Add y=x line
+
+# Close the jpeg file
+dev.off() 
 ```
 
 ```{r auctraintest, message=FALSE, warning=FALSE}
