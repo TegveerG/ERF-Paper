@@ -144,8 +144,8 @@ dev.off()
 rf_train <- predict(classifier_RF, x_train, type = 'prob')
 rf_test <- predict(classifier_RF, x_test, type = 'prob')
 
-train.rf <- prediction(rf_train[,1], y_train)
-test.rf <- prediction(rf_test[,1], y_test)
+train.rf <- prediction(rf_train[,2], y_train)
+test.rf <- prediction(rf_test[,2], y_test)
 
 rf_perf_train <- performance(train.rf, "tpr", "fpr")
 rf_perf_test <- performance(test.rf, "tpr", "fpr")
@@ -167,7 +167,7 @@ logistic_model <- glm(scam_type_grouped ~ ., data = train, family = binomial(lin
 ```{r logmodelsummary, results='asis'}
 # logistic_model_summary <- summary(logistic_model)
 # logistic_model_summary
-stargazer::stargazer(logistic_model,type='html',report = "vc*stp",
+stargazer::stargazer(logistic_model,type='text',report = "vc*stp",
     ci = TRUE)
 ```
 
@@ -263,18 +263,21 @@ perf_test <- performance(test_pred, measure = "tpr", x.measure = "fpr")
 
 ```{r roccurve-pdf, message=FALSE, warning=FALSE, include=FALSE, echo=FALSE}
 # Open a pdf file
-pdf("ROC.pdf", width = 6.5, height = 4.24) 
+pdf("ROC.pdf", width = 9.0, height = 6.00) 
+op <- par(family = "serif")
 
 # Plot the ROC curve
 plot(perf_train, main = "Logistic Regression vs Random Forest AUC-ROC Curve",
-    col = "#009ECE")
+    col = "#009ECE", xlab = "False Positive Rate", ylab = "True Positive Rate",
+    type = "l", lwd = 1.5, family="serif", cex.main = 1.15, cex.lab = 1, cex.axis = 1.05, font.axis = 2, font.lab = 2) # c
 plot(perf_test, add = T, col = "#FF9E00", lwd = 1.5)
 plot(rf_perf_train, add = T, col = "darkgreen", lwd = 1.5)
 plot(rf_perf_test, add = T, col = "pink", lwd = 1.5)
-legend(0.32, 0.25, c("Logistic Regression Train Data", "Logistic Regression Test Data", "Random Forest Train Data", "Random Forest Test Data"), 
+legend(0.75, 0.25, c("Logistic Regression Train Data", "Logistic Regression Test Data", "Random Forest Train Data", "Random Forest Test Data"), 
        col = c("#009ECE", "#FF9E00", "darkgreen", "pink"), 
        bty = "n", lwd = 1.2, cex = 0.75)
 abline(0, 1, lty = 2, col = "gray") # Add y=x line
+par(op)
 
 # Close the pdf file
 dev.off()
@@ -282,35 +285,44 @@ dev.off()
 
 ```{r roccurve-jpg, message=FALSE, warning=FALSE, include=FALSE, echo=FALSE}
 # Open a pdf file
-jpeg("ROC_LR_RF.jpg", width = 700, height = 350, res = 300)
+jpeg("ROC_LR_RF.jpg", width=9, height=6.0, units="in", res = 300)
+
+op <- par(family = "serif")
 
 # Plot the ROC curve
 plot(perf_train, main = "Logistic Regression vs Random Forest AUC-ROC Curve",
-    col = "#009ECE")
+    col = "#009ECE", xlab = "False Positive Rate", ylab = "True Positive Rate",
+    type = "l", lwd = 1.5, family="serif", cex.main = 1.15, cex.lab = 1, cex.axis = 1.05, font.axis = 2, font.lab = 2) # c
 plot(perf_test, add = T, col = "#FF9E00", lwd = 1.5)
 plot(rf_perf_train, add = T, col = "darkgreen", lwd = 1.5)
 plot(rf_perf_test, add = T, col = "pink", lwd = 1.5)
-legend(0.32, 0.25, c("Logistic Regression Train Data", "Logistic Regression Test Data", "Random Forest Train Data", "Random Forest Test Data"), 
+legend(0.60, 0.25, c("Logistic Regression Train Data", "Logistic Regression Test Data", "Random Forest Train Data", "Random Forest Test Data"), 
        col = c("#009ECE", "#FF9E00", "darkgreen", "pink"), 
        bty = "n", lwd = 1.2, cex = 0.75)
 abline(0, 1, lty = 2, col = "gray") # Add y=x line
+par(op)
 
 # Close the pdf file
 dev.off()
 ```
 
 
-```{r roccurve, message=FALSE, warning=FALSE, include=FALSE, echo=FALSE}
+```{r roccurve, message=FALSE, warning=FALSE,}
+# Plot the ROC curve
+op <- par(family = "serif")
+
 # Plot the ROC curve
 plot(perf_train, main = "Logistic Regression vs Random Forest AUC-ROC Curve",
-    col = "#009ECE")
+    col = "#009ECE", xlab = "False Positive Rate", ylab = "True Positive Rate",
+    type = "l", lwd = 1.5, family="serif", cex.main = 1.15, cex.lab = 1, cex.axis = 1.05, font.axis = 2, font.lab = 2) # c
 plot(perf_test, add = T, col = "#FF9E00", lwd = 1.5)
 plot(rf_perf_train, add = T, col = "darkgreen", lwd = 1.5)
 plot(rf_perf_test, add = T, col = "pink", lwd = 1.5)
-legend(0.32, 0.25, c("Logistic Regression Train Data", "Logistic Regression Test Data", "Random Forest Train Data", "Random Forest Test Data"), 
+legend(0.60, 0.25, c("Logistic Regression Train Data", "Logistic Regression Test Data", "Random Forest Train Data", "Random Forest Test Data"), 
        col = c("#009ECE", "#FF9E00", "darkgreen", "pink"), 
        bty = "n", lwd = 1.2, cex = 0.75)
 abline(0, 1, lty = 2, col = "gray") # Add y=x line
+par(op)
 ```
 
 ```{r auctraintest, message=FALSE, warning=FALSE}
