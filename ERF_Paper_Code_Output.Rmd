@@ -3,12 +3,8 @@ title: "ERF Paper"
 author: "Tegveer Ghura"
 date: "2023-02-10"
 output:
-  word_document: default
   html_document:
-    code_folding: show
-  keep_tex: yes
-  number_sections: yes
-  pdf_document: null
+    number_sections: yes
 ---
 
 ```{r setup, include=FALSE}
@@ -144,6 +140,17 @@ varImpPlot(classifier_RF, main="Variable Importance: Random Forest")
 dev.off() 
 ```
 
+```{r rfmodelcurves}
+rf_train <- predict(classifier_RF, x_train, type = 'prob')
+rf_test <- predict(classifier_RF, x_test, type = 'prob')
+
+train.rf <- prediction(rf_train[,1], y_train)
+test.rf <- prediction(rf_test[,1], y_test)
+
+rf_perf_train <- performance(train.rf, "tpr", "fpr")
+rf_perf_test <- performance(test.rf, "tpr", "fpr")
+```
+
 ```{r logmodel}
 library(caret)
 set.seed(2377)
@@ -181,18 +188,6 @@ y_test_pred<- as.factor(y_test_pred)
 test$scam_type_grouped <- as.factor(test$scam_type_grouped)
 (cm = table(test$scam_type_grouped, y_test_pred)) # NAs ignored
 #y_pred <- as.factor(unname(y_pred)) # for cfm plot
-```
-
-```{r rfmodelcurves}
-# rf_train <- predict(classifier_RF, train, type = "prob")
-# rf_test <- predict(classifier_RF, test, type = "prob")
-# 
-# train.rf <- prediction(`rf_train$Exit Scam`, train$scam_type_grouped)
-# test.rf <- prediction(DT.1.pred[, 1], Prediction_Clean$warstds)
-# 
-# perf.CH <- performance(train.rf, "tpr", "fpr")
-# plot(perf.CH, main = "Logistic Regression Vs Decision Tree",
-#     col = "#009ECE")
 ```
 
 ```{r cfmtrain}
@@ -262,35 +257,60 @@ test_pred <- prediction(test_prob_pred, test$scam_type_grouped)
 # Create an ROC curve
 perf_train <- performance(train_pred, measure = "tpr", x.measure = "fpr")
 perf_test <- performance(test_pred, measure = "tpr", x.measure = "fpr")
+```
 
+# Plot ROC Curves and save
+
+```{r roccurve-pdf, message=FALSE, warning=FALSE, include=FALSE, echo=FALSE}
 # Open a pdf file
 pdf("ROC.pdf", width = 6.5, height = 4.24) 
 
-
 # Plot the ROC curve
-plot(perf_train, main = "Logistic Regression AUC-ROC Curve",
+plot(perf_train, main = "Logistic Regression vs Random Forest AUC-ROC Curve",
     col = "#009ECE")
 plot(perf_test, add = T, col = "#FF9E00", lwd = 1.5)
-legend(0.32, 0.25, c("Train Data", "Test Data"), 
-       col = c("#009ECE", "#FF9E00"), 
+plot(rf_perf_train, add = T, col = "darkgreen", lwd = 1.5)
+plot(rf_perf_test, add = T, col = "pink", lwd = 1.5)
+legend(0.32, 0.25, c("Logistic Regression Train Data", "Logistic Regression Test Data", "Random Forest Train Data", "Random Forest Test Data"), 
+       col = c("#009ECE", "#FF9E00", "darkgreen", "pink"), 
        bty = "n", lwd = 1.2, cex = 0.75)
 abline(0, 1, lty = 2, col = "gray") # Add y=x line
+
 # Close the pdf file
 dev.off()
+```
 
-# Open a pdf and jpeg file
-#jpeg("ROC.jpg", width = 700, height = 350)
+```{r roccurve-jpg, message=FALSE, warning=FALSE, include=FALSE, echo=FALSE}
+# Open a pdf file
+jpeg("ROC_LR_RF.jpg", width = 700, height = 350, res = 300)
+
 # Plot the ROC curve
-plot(perf_train, main = "Logistic Regression AUC-ROC Curve",
+plot(perf_train, main = "Logistic Regression vs Random Forest AUC-ROC Curve",
     col = "#009ECE")
 plot(perf_test, add = T, col = "#FF9E00", lwd = 1.5)
-legend(0.32, 0.25, c("Train Data", "Test Data"), 
-       col = c("#009ECE", "#FF9E00"), 
+plot(rf_perf_train, add = T, col = "darkgreen", lwd = 1.5)
+plot(rf_perf_test, add = T, col = "pink", lwd = 1.5)
+legend(0.32, 0.25, c("Logistic Regression Train Data", "Logistic Regression Test Data", "Random Forest Train Data", "Random Forest Test Data"), 
+       col = c("#009ECE", "#FF9E00", "darkgreen", "pink"), 
        bty = "n", lwd = 1.2, cex = 0.75)
 abline(0, 1, lty = 2, col = "gray") # Add y=x line
 
-# Close the jpeg file
-dev.off() 
+# Close the pdf file
+dev.off()
+```
+
+
+```{r roccurve, message=FALSE, warning=FALSE, include=FALSE, echo=FALSE}
+# Plot the ROC curve
+plot(perf_train, main = "Logistic Regression vs Random Forest AUC-ROC Curve",
+    col = "#009ECE")
+plot(perf_test, add = T, col = "#FF9E00", lwd = 1.5)
+plot(rf_perf_train, add = T, col = "darkgreen", lwd = 1.5)
+plot(rf_perf_test, add = T, col = "pink", lwd = 1.5)
+legend(0.32, 0.25, c("Logistic Regression Train Data", "Logistic Regression Test Data", "Random Forest Train Data", "Random Forest Test Data"), 
+       col = c("#009ECE", "#FF9E00", "darkgreen", "pink"), 
+       bty = "n", lwd = 1.2, cex = 0.75)
+abline(0, 1, lty = 2, col = "gray") # Add y=x line
 ```
 
 ```{r auctraintest, message=FALSE, warning=FALSE}
