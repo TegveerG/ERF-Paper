@@ -125,9 +125,33 @@ classifier_RF
 # Predicting the Test set results
 y_pred = predict(classifier_RF, newdata = x_test)
 
-# Confusion Matrix
-confusion_mtx = table(y_test, y_pred)
-confusion_mtx
+# Test Confusion Matrix Metrics
+cm.rf = as.matrix(table(Actual = y_test, Predicted = y_pred)) # create the confusion matrix
+cm.rf
+
+n = sum(cm.rf) # number of instances
+nc = nrow(cm.rf) # number of classes
+diag = diag(cm.rf) # number of correctly classified instances per class 
+rowsums = apply(cm.rf, 1, sum) # number of instances per class
+colsums = apply(cm.rf, 2, sum) # number of predictions per class
+p = rowsums / n # distribution of instances over the actual classes
+q = colsums / n # distribution of instances over the predicted classes
+
+accuracy = sum(diag) / n 
+cat("Accuracy:", accuracy)
+
+precision = diag / colsums 
+recall = diag / rowsums 
+f1 = 2 * precision * recall / (precision + recall) 
+
+data.frame(precision, recall, f1)
+ 
+macroPrecision = mean(precision)
+macroRecall = mean(recall)
+macroF1 = mean(f1)
+weightedF1 = ((as.numeric(table(df$scam_type_grouped)[1])*as.numeric(f1[1]))+(as.numeric(table(df$scam_type_grouped)[2])*as.numeric(f1[2])))/(as.numeric(table(df$scam_type_grouped)[1])+as.numeric(table(df$scam_type_grouped)[2]))
+
+data.frame(macroPrecision, macroRecall, macroF1, weightedF1)
 ```
 
 ```{r rfmodel2}
@@ -141,7 +165,7 @@ varImpPlot(classifier_RF, main="Variable Importance: Random Forest")
 ```
 
 ```{r rftreeplot}
-jpeg("tree_num_41.jpg", width = 700, height = 350)
+#jpeg("tree_num_41.jpg", width = 700, height = 350)
 library(dplyr)
 library(ggraph)
 library(igraph)
@@ -201,7 +225,7 @@ tree_func <- function(final_model,
 tree_func(final_model = classifier_RF, 41)
 
 # Close the jpeg file
-dev.off() 
+#dev.off() 
 ```
 
 
@@ -242,17 +266,47 @@ test_prob_pred <- predict(logistic_model, type = 'response', newdata = test)
 #y_pred = ifelse(prob_pred > 0.5, "Exploit", "Exit Scam")
 
 # Train Confusion Matrix
-y_train_pred = ifelse(train_prob_pred > 0.5, 1, 0)
+y_train_pred = ifelse(train_prob_pred > 0.5, "Exploit", "Exit Scam")
 y_train_pred<- as.factor(y_train_pred)
-train$scam_type_grouped <- as.factor(train$scam_type_grouped)
+train$scam_type_grouped <- ifelse(train$scam_type_grouped ==1, "Exploit", "Exit Scam")
+train$scam_type_grouped<- as.factor(train$scam_type_grouped)
 (cm = table(train$scam_type_grouped, y_train_pred))
 
 # Test Confusion Matrix
-y_test_pred = ifelse(test_prob_pred > 0.5, 1, 0)
+y_test_pred = ifelse(test_prob_pred > 0.5, "Exploit", "Exit Scam")
 y_test_pred<- as.factor(y_test_pred)
-test$scam_type_grouped <- as.factor(test$scam_type_grouped)
+test$scam_type_grouped <- ifelse(test$scam_type_grouped ==1, "Exploit", "Exit Scam")
+test$scam_type_grouped<- as.factor(test$scam_type_grouped)
 (cm = table(test$scam_type_grouped, y_test_pred)) # NAs ignored
 #y_pred <- as.factor(unname(y_pred)) # for cfm plot
+
+# Test Confusion Matrix Metrics
+cm.lr = as.matrix(table(Actual = test$scam_type_grouped, Predicted = y_test_pred)) # create the confusion matrix
+cm.lr
+
+n = sum(cm.lr) # number of instances
+nc = nrow(cm.lr) # number of classes
+diag = diag(cm.lr) # number of correctly classified instances per class 
+rowsums = apply(cm.lr, 1, sum) # number of instances per class
+colsums = apply(cm.lr, 2, sum) # number of predictions per class
+p = rowsums / n # distribution of instances over the actual classes
+q = colsums / n # distribution of instances over the predicted classes
+
+accuracy = sum(diag) / n 
+cat("Accuracy:", accuracy)
+
+precision = diag / colsums 
+recall = diag / rowsums 
+f1 = 2 * precision * recall / (precision + recall) 
+
+data.frame(precision, recall, f1)
+ 
+macroPrecision = mean(precision)
+macroRecall = mean(recall)
+macroF1 = mean(f1)
+weightedF1 = ((as.numeric(table(df$scam_type_grouped)[1])*as.numeric(f1[1]))+(as.numeric(table(df$scam_type_grouped)[2])*as.numeric(f1[2])))/(as.numeric(table(df$scam_type_grouped)[1])+as.numeric(table(df$scam_type_grouped)[2]))
+
+data.frame(macroPrecision, macroRecall, macroF1, weightedF1)
 ```
 
 ```{r cfmtrain}
