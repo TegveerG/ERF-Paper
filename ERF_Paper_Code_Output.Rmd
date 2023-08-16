@@ -243,8 +243,8 @@ rf_perf_test <- performance(test.rf, "tpr", "fpr")
 ```{r logmodel}
 library(caret)
 set.seed(2377)
-train.index <- createDataPartition(df$scam_networks_grouped, 
-                                   p = .8, list = FALSE)
+#train.index <- createDataPartition(df$scam_networks_grouped, 
+                                   #p = .8, list = FALSE)
 train <- df[ train.index,]
 test  <- df[-train.index,]
 
