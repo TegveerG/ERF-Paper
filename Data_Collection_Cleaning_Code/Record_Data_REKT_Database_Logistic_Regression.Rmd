@@ -1,0 +1,205 @@
+---
+title: "REKT_Database_Logistic_Regression"
+author: "Tegveer Ghura"
+date: "2022-12-27"
+output: html_document
+---
+
+```{r init, messages=FALSE} 
+library(naivebayes)
+library(klaR)
+library(e1071)
+library(caTools)
+library(caret)
+library(tidyverse)
+library(kableExtra)
+library(stargazer)
+library(flextable)
+library(dplyr)
+library(leaps)
+library(caret)
+library(ggplot2)
+library(ggExtra)
+library(tidyr)
+library(ISLR2)
+library(ISLR)
+library(readr)
+library(reticulate)
+library(tidyverse)
+```
+
+```{r import, message=FALSE} 
+df <- read_csv('../Data/REKT_Database_Clean_Python.csv') 
+df <- subset(df, select = -c(...1, token_name, description, name_categories))  
+```
+
+```{r cleanscamtype} 
+# Removing dictionary values from the scam_type column
+df$scam_type <- gsub("[^:]*,[^:]*", "",df$scam_type)
+df$scam_type <- gsub("'id'::", "",df$scam_type)
+df$scam_type <- gsub("\\{|\\}", "",df$scam_type)
+df$scam_type <- gsub("'", "",df$scam_type)
+df$scam_type <- gsub("type: ", "",df$scam_type)
+df$scam_type <- gsub(" ", "",df$scam_type)
+```
+
+```{r cleanscamNetworks, message=FALSE, warning=FALSE} 
+# Removing list brackets from the scamNetworks column
+df$scamNetworks <- gsub("\\[|\\]", "", df$scamNetworks)
+df$scamNetworks <- gsub("'", '', df$scamNetworks)
+# imputing the missing values as "Other"
+#df$scamNetworks[df$scamNetworks==""] <- "Other"
+# Split df by scamNetworks feature that has multiple categorical values for respective rows 
+#library(splitstackshape)
+#df2 <- concat.split.multiple(data = df, split.cols = "scamNetworks", direction #= "long")
+```
+
+```{r cleanX} 
+# Funds returned NA's to 0, funds lost NAs drop
+#Let’s calculate the frequency of response variable to see if it is imbalanced. The minimum frequency of #each class is 5 required for analysis.
+
+xtabs(~scam_type, data = df)
+```
+
+```{r zerofundslost} 
+nrow(df %>% filter(funds_lost==0))
+nrow(df %>% filter(funds_returned==0))
+# if funds lost is $0, that means the respective observation or record has not much information to offer to us in terms of a Naive Bayes Model. Also, if no funds were lost then no funds can be returned/recovered. Therefore, filtering out the 0 funds_lost observations makes sense if we want balanced classes for our predictor, scam type. 
+```
+
+```{r filterscams} 
+# ~1861 honeypots, 383 rugpulls, and 29 "other" scams filtered out in the process of treating class imbalance 
+# Moreover, no key information, in terms of funds lost or source of the attack, offered about these attacks. We are left with all those rows where funds lost != 0 and where all projects have some information to offer regarding the extent of the scam, helpful in predicting the scam type.
+
+#df2 <- df2 %>% filter(description!="The contract owner could disable the transfer function, which restricted users in selling their tokens." & funds_lost!=0) 
+#df2 <- df2 %>% filter(description!="A review of the token contract shows low network activity, which didn't lead to significant funds loss for the user in the past. The project is considered abandoned." & funds_lost!=0)
+df2 <- df2 %>% filter(funds_lost!=0)
+
+xtabs(~scam_type, data = df2)
+```
+~1500 honeypot scams filtered out -> projects that were either abandoned or disabled did not have 
+
+Now we have all records where funds lost != 0 and predictor with balanced classes
+
+As per REKT Database, Honeypot attacks, Rugpull attacks, Abandoned scams, and the Kronos Dao project (classified as "other") can be pooled together as Exit Scams and all other attacks can be pooled together as Exploits. We, therefore, will conduct Naive Bayes with a binary predictor. Moreover, after pooling together the respective scam types and treating predictor imbalance, the class frequencies of our desired target variable is: n(Exit Scam) = 380 and n(Exploit) = 435
+
+Taking log of funds_lost and funds_returned to obtain normal distribution assumption for Naive Bayes.
+
+```{r logfunds} 
+# Removing dictionary values from the source column
+df2$log_funds_lost <- log(df2$funds_lost)
+df2$log_funds_returned <- log(df2$funds_returned + 1) # add +1 because we have zeros in funds_returned and helps avoid negative inf values
+```
+
+
+```{r combinescamtype} 
+df %>% group_by(scam_type) %>% summarise(n()) 
+# pooling together scam types into respective types as described above
+df <- df %>% 
+  mutate(scam_type_grouped = if_else(scam_type=="Honeypot" | scam_type=="Rugpull" | scam_type=="Abandoned" | project_name=="Kronos Dao" | project_name=="Genesis" | project_name=="Celsius Network" | project_name=="Voyager" | project_name=="BlockFi" | project_name=="FTX Group" | project_name=="Bitcoin Sheikh" | project_name=="Trade Coin Club" | project_name=="EmpiresX" | project_name=="Vauld", "Exit Scam", "Exploit"))
+df <- subset(df, select = -c(scam_type))
+df %>% group_by(scam_type_grouped) %>% summarise(n()) 
+```
+
+```{r specifytypes} 
+df$months=as.factor(months(df$date))
+df$scamNetworks <- as.factor(df$scamNetworks)
+df$scam_type_grouped <-as.factor(df$scam_type_grouped)
+
+df <- subset(df, select = -c(month_of_attack, day_of_week_of_attack, day_of_year_of_attack, date, project_name))  
+
+df <- df[sample(1:nrow(df)), ] # shuffle rows
+```
+
+```{r exportcsv} 
+# Exporting the pre-processed dataframe into a CSV file for comparing other classifiers
+write.csv(data_nb, "../../data/Clean Data/REKT_Database_Clean_Classification.csv")
+```
+
+```{r traintestsplit} 
+set.seed(1234)
+ind <- sample(2, nrow(df), replace = T, prob = c(0.8, 0.2))
+train <- df[ind == 1,]
+test <- df[ind == 2,] 
+```
+
+```{r trainmodel} 
+logistic_model <- glm(scam_type_grouped ~ ., data = train, family = "binomial")
+summary(logistic_model)
+```
+
+```{r trainpred} 
+p <- predict(logistic_model, train, type = 'prob')
+head(cbind(p, train))
+```
+
+```{r ggplotConfusionMatrix, warning=FALSE} 
+#credit: https://stackoverflow.com/questions/46063234/how-to-produce-a-confusion-matrix-and-find-the-misclassification-rate-of-the-na%C3%AF
+
+library(scales)
+ggplotConfusionMatrix <- function(m){
+  mytitle <- paste("Accuracy", percent_format()(m$overall[1]))
+  p <-
+    ggplot(data = as.data.frame(m$table) ,
+           aes(x = Prediction, y = Reference)) +
+    geom_tile(aes(fill = log(Freq)), 
+              colour = "white", show.legend = FALSE) +
+    scale_fill_gradient(low = "white", high = "steelblue") +
+    geom_text(aes(x = Prediction, y = Reference, 
+                  label = Freq, show.legend = FALSE)) +
+    ggtitle(mytitle) + 
+    scale_x_discrete(limits = rev) +
+    theme_minimal()
+  return(p)
+}
+```
+
+```{r confmatrixtrain, warning=FALSE} 
+train_preds <- predict(logistic_model, train)
+#(tab1 <- table(train_preds, train$scam_type_grouped))
+cfm_train <- confusionMatrix(train_preds, train$scam_type_grouped)
+ggplotConfusionMatrix(cfm_train)
+cfm_train
+```
+
+```{r confmatrixtest, warning=FALSE} 
+test_preds <- predict(logistic_model, test)
+#(tab2 <- table(test_preds, test$scam_type_grouped))
+cfm_test <- confusionMatrix(test_preds, test$scam_type_grouped)
+ggplotConfusionMatrix(cfm_test)
+cfm_test
+```
+
+```{r discretizedtrain, warning=FALSE, message=FALSE} 
+library(arules)
+set.seed(2838)
+x = subset(data_nb, select = -c(scam_type_grouped))  
+Scam_Type = as.factor(data_nb$scam_type_grouped)
+
+Disc_log_funds_lost = discretize(x$log_funds_lost, method = "cluster", breaks = 3)
+Disc_log_funds_returned = discretize(x$log_funds_returned, method = "cluster", breaks = 3)
+Disc_day_of_year_of_attack = discretize(x$day_of_year_of_attack, method = "cluster", breaks = 3)
+
+Ddf = data.frame(Disc_log_funds_lost, Disc_log_funds_returned, x$scamNetworks, x$month_of_attack, x$day_of_week_of_attack, Disc_day_of_year_of_attack, Scam_Type)
+
+ind <- sample(2, nrow(Ddf), replace = T, prob = c(0.8, 0.2))
+train_discretized <- Ddf[ind == 1,]
+test_discretized <- Ddf[ind == 2,] 
+
+discretized_NB_model <- NaiveBayes(Scam_Type ~ ., data=train_discretized) 
+
+cfm_discretized_train <- confusionMatrix(predict(discretized_NB_model, train_discretized)$class, train_discretized$Scam_Type)
+
+ggplotConfusionMatrix(cfm_discretized_train)
+cfm_discretized_train
+```
+
+Training model accuracy after discretizing continuous variables using k-means clustering is around 75%
+
+```{r discretizedtest, warning=FALSE, message=FALSE} 
+cfm_discretized_test <- confusionMatrix(predict(discretized_NB_model, test_discretized)$class, test_discretized$Scam_Type)
+ggplotConfusionMatrix(cfm_discretized_test)
+cfm_discretized_test
+```
+
+Test model accuracy after discretizing continuous variables using k-means clustering is around 73%
